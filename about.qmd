@@ -1,8 +1,8 @@
 ---
-title: About
-image: profile.jpg
+title: About ME
+image: me.HEIC
 about:
   template: jolla
 ---
 
-About this blog
+Hello my name is Emilie Chi! I am currently a sophomore at the University of Pennsylvania, and am majoring in Communications (Concentration: Data and Network Science) and minoring in Consumer Psychology. This blog will capture my exploration and experimentation of language Models in my 'Stories from data: Programming for Data Journalism' UPENN Clas 
