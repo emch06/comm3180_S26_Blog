@@ -1,6 +1,6 @@
 ---
 title: About ME
-image: me.HEIC
+image: me.jpg
 about:
   template: jolla
 ---
