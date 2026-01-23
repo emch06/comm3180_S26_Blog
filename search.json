@@ -7,13 +7,6 @@
     "text": "Hello my name is Emilie Chi! I am currently a sophomore at the University of Pennsylvania, and am majoring in Communications (Concentration: Data and Network Science) and minoring in Consumer Psychology. This blog will capture my exploration and experimentation of language Models in my ‘Stories from data: Programming for Data Journalism’ UPENN Clas"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "My Data Stories",
-    "section": "",
-    "text": "A test post\n\n\n\nvisualization\n\ndata stories\n\n\n\nAn example post from a Jupyter notebook\n\n\n\n\n\nJan 12, 2026\n\n\nAn LLM User\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "posts/000_test_post/index.html",
     "href": "posts/000_test_post/index.html",
     "title": "A test post",
@@ -26,5 +19,19 @@
     "title": "A test post",
     "section": "Stories from data",
     "text": "Stories from data\n\nLet’s set up some data\n\n\nx = ['A', 'B', 'C']\ny = [1, 5, 3]\n\n\nNow let’s visualize it\n\nplt.bar(x, y)\nplt.show()"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "My Data Stories",
+    "section": "",
+    "text": "Task #1 in experimenting with website\n\n\n\nLLMs\n\nExperiment\n\n\n\nHow to make a new post appear\n\n\n\n\n\nJan 23, 2026\n\n\nEmilie\n\n\n\n\n\n\n\n\n\n\n\n\nA test post\n\n\n\nvisualization\n\ndata stories\n\n\n\nAn example post from a Jupyter notebook\n\n\n\n\n\nJan 12, 2026\n\n\nAn LLM User\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/002_task_#1/task_#1.html",
+    "href": "posts/002_task_#1/task_#1.html",
+    "title": "Task #1 in experimenting with website",
+    "section": "",
+    "text": "Let’s hope this works out!"
   }
 ]
