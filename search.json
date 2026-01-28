@@ -39,6 +39,6 @@
     "href": "posts/001_DOW1_Weather/DOW1.html",
     "title": "Dataset of the Week #1: The Weather in Philadelphia",
     "section": "",
-    "text": "My post\n\nprint(\"This is some code\") \n\nThis is some code"
+    "text": "My post\nprint(“This is some code”)\n\n\nThe next section\n\nAnd another"
   }
 ]
