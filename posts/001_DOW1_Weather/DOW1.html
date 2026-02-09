@@ -22,10 +22,45 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -70,6 +105,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -154,13 +192,987 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="my-post" class="level3">
 <h3 class="anchored" data-anchor-id="my-post">My post</h3>
-<p>print(“This is some code”)</p>
-<p><img src="IMG_3721.jpeg" class="img-fluid" width="300"></p>
-<hr>
-<p>The next section</p>
-<hr>
-<p>And another</p>
-<hr>
+<div id="bdf7c7cd-26d3-4124-9d4b-3be4e1af97a7" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="f700b449-257b-4ec7-86c1-4d4c2bedb8db" class="cell" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>weather_df <span class="op">=</span> pd.read_csv(<span class="st">'data/philadelphia_weather_2005_to_2025.csv'</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>weather_df <span class="op">=</span> weather_df.assign(date<span class="op">=</span>pd.to_datetime(weather_df[<span class="st">'date'</span>]))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<section id="inspect-the-data" class="level4">
+<h4 class="anchored" data-anchor-id="inspect-the-data">Inspect the data</h4>
+<div id="85429aeb-bd71-41a7-88a9-2e971d9b1d7a" class="cell" data-execution_count="3">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>weather_df.columns</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="3">
+<pre><code>Index(['day', 'year', 'high', 'low', 'rain', 'snow', 'date', 'day_num',
+       'month_num', 'dow', 'dow_name', 'month'],
+      dtype='str')</code></pre>
+</div>
+</div>
+<div id="04c48151-3d94-4578-90b6-613872647bcf" class="cell" data-execution_count="4">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>weather_df.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="4">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">day</th>
+<th data-quarto-table-cell-role="th">year</th>
+<th data-quarto-table-cell-role="th">high</th>
+<th data-quarto-table-cell-role="th">low</th>
+<th data-quarto-table-cell-role="th">rain</th>
+<th data-quarto-table-cell-role="th">snow</th>
+<th data-quarto-table-cell-role="th">date</th>
+<th data-quarto-table-cell-role="th">day_num</th>
+<th data-quarto-table-cell-role="th">month_num</th>
+<th data-quarto-table-cell-role="th">dow</th>
+<th data-quarto-table-cell-role="th">dow_name</th>
+<th data-quarto-table-cell-role="th">month</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>January 1</td>
+<td>2005</td>
+<td>64</td>
+<td>39</td>
+<td>0.00</td>
+<td>0.0</td>
+<td>2005-01-01</td>
+<td>1</td>
+<td>1</td>
+<td>5</td>
+<td>Saturday</td>
+<td>January</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>January 2</td>
+<td>2005</td>
+<td>47</td>
+<td>33</td>
+<td>0.01</td>
+<td>0.0</td>
+<td>2005-01-02</td>
+<td>2</td>
+<td>1</td>
+<td>6</td>
+<td>Sunday</td>
+<td>January</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>January 3</td>
+<td>2005</td>
+<td>57</td>
+<td>40</td>
+<td>0.06</td>
+<td>0.0</td>
+<td>2005-01-03</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>Monday</td>
+<td>January</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>January 4</td>
+<td>2005</td>
+<td>55</td>
+<td>44</td>
+<td>0.00</td>
+<td>0.0</td>
+<td>2005-01-04</td>
+<td>4</td>
+<td>1</td>
+<td>1</td>
+<td>Tuesday</td>
+<td>January</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>January 5</td>
+<td>2005</td>
+<td>47</td>
+<td>36</td>
+<td>0.62</td>
+<td>0.0</td>
+<td>2005-01-05</td>
+<td>5</td>
+<td>1</td>
+<td>2</td>
+<td>Wednesday</td>
+<td>January</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="a86bc930-d5ed-429e-b9ed-c78d2a4faa00" class="cell" data-execution_count="5">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>weather_df[<span class="st">'year'</span>].value_counts()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="5">
+<pre><code>year
+2008    366
+2020    366
+2024    366
+2016    366
+2012    366
+2009    365
+2007    365
+2006    365
+2005    365
+2013    365
+2014    365
+2011    365
+2010    365
+2017    365
+2015    365
+2019    365
+2018    365
+2021    365
+2022    365
+2023    365
+2025    365
+Name: count, dtype: int64</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="what-was-the-weather-like-in-philadelphia-the-day-of-my-birthday-01-30-for-each-year-since-2006-2025" class="level2">
+<h2 class="anchored" data-anchor-id="what-was-the-weather-like-in-philadelphia-the-day-of-my-birthday-01-30-for-each-year-since-2006-2025">1) What was the weather like in Philadelphia the day of my birthday (01-30) for each year since 2006-2025?</h2>
+<p>## * a. What was the average fahrenheit for the day? ## * b. Did it rain? ## * c.&nbsp;Did it snow? ## * d.&nbsp;What day of the week was it?</p>
+<div id="d88a8140-ac0f-4678-85ca-bcdb48ae8294" class="cell" data-execution_count="8">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>weather_df.query(<span class="st">'day =="January 30"'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="8">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">day</th>
+<th data-quarto-table-cell-role="th">year</th>
+<th data-quarto-table-cell-role="th">high</th>
+<th data-quarto-table-cell-role="th">low</th>
+<th data-quarto-table-cell-role="th">rain</th>
+<th data-quarto-table-cell-role="th">snow</th>
+<th data-quarto-table-cell-role="th">date</th>
+<th data-quarto-table-cell-role="th">day_num</th>
+<th data-quarto-table-cell-role="th">month_num</th>
+<th data-quarto-table-cell-role="th">dow</th>
+<th data-quarto-table-cell-role="th">dow_name</th>
+<th data-quarto-table-cell-role="th">month</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">29</th>
+<td>January 30</td>
+<td>2005</td>
+<td>36</td>
+<td>26</td>
+<td>0.15</td>
+<td>1.3</td>
+<td>2005-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>6</td>
+<td>Sunday</td>
+<td>January</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">394</th>
+<td>January 30</td>
+<td>2006</td>
+<td>62</td>
+<td>37</td>
+<td>0.00</td>
+<td>0.0</td>
+<td>2006-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>0</td>
+<td>Monday</td>
+<td>January</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">759</th>
+<td>January 30</td>
+<td>2007</td>
+<td>39</td>
+<td>20</td>
+<td>0.02</td>
+<td>0.2</td>
+<td>2007-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>1</td>
+<td>Tuesday</td>
+<td>January</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1124</th>
+<td>January 30</td>
+<td>2008</td>
+<td>49</td>
+<td>29</td>
+<td>0.05</td>
+<td>0.0</td>
+<td>2008-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>2</td>
+<td>Wednesday</td>
+<td>January</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">1490</th>
+<td>January 30</td>
+<td>2009</td>
+<td>36</td>
+<td>22</td>
+<td>0.00</td>
+<td>0.0</td>
+<td>2009-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>4</td>
+<td>Friday</td>
+<td>January</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1855</th>
+<td>January 30</td>
+<td>2010</td>
+<td>21</td>
+<td>16</td>
+<td>0.10</td>
+<td>2.1</td>
+<td>2010-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>5</td>
+<td>Saturday</td>
+<td>January</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2220</th>
+<td>January 30</td>
+<td>2011</td>
+<td>39</td>
+<td>18</td>
+<td>0.00</td>
+<td>0.0</td>
+<td>2011-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>6</td>
+<td>Sunday</td>
+<td>January</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">2585</th>
+<td>January 30</td>
+<td>2012</td>
+<td>42</td>
+<td>33</td>
+<td>0.00</td>
+<td>0.0</td>
+<td>2012-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>0</td>
+<td>Monday</td>
+<td>January</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2951</th>
+<td>January 30</td>
+<td>2013</td>
+<td>68</td>
+<td>38</td>
+<td>0.32</td>
+<td>0.0</td>
+<td>2013-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>2</td>
+<td>Wednesday</td>
+<td>January</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3316</th>
+<td>January 30</td>
+<td>2014</td>
+<td>28</td>
+<td>10</td>
+<td>0.00</td>
+<td>0.0</td>
+<td>2014-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>3</td>
+<td>Thursday</td>
+<td>January</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">3681</th>
+<td>January 30</td>
+<td>2015</td>
+<td>42</td>
+<td>20</td>
+<td>0.00</td>
+<td>0.1</td>
+<td>2015-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>4</td>
+<td>Friday</td>
+<td>January</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">4046</th>
+<td>January 30</td>
+<td>2016</td>
+<td>41</td>
+<td>26</td>
+<td>0.00</td>
+<td>0.0</td>
+<td>2016-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>5</td>
+<td>Saturday</td>
+<td>January</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4412</th>
+<td>January 30</td>
+<td>2017</td>
+<td>39</td>
+<td>27</td>
+<td>0.02</td>
+<td>0.8</td>
+<td>2017-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>0</td>
+<td>Monday</td>
+<td>January</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">4777</th>
+<td>January 30</td>
+<td>2018</td>
+<td>38</td>
+<td>22</td>
+<td>0.14</td>
+<td>0.3</td>
+<td>2018-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>1</td>
+<td>Tuesday</td>
+<td>January</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">5142</th>
+<td>January 30</td>
+<td>2019</td>
+<td>35</td>
+<td>7</td>
+<td>0.01</td>
+<td>0.2</td>
+<td>2019-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>2</td>
+<td>Wednesday</td>
+<td>January</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">5507</th>
+<td>January 30</td>
+<td>2020</td>
+<td>39</td>
+<td>25</td>
+<td>0.00</td>
+<td>0.0</td>
+<td>2020-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>3</td>
+<td>Thursday</td>
+<td>January</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">5873</th>
+<td>January 30</td>
+<td>2021</td>
+<td>35</td>
+<td>19</td>
+<td>0.00</td>
+<td>0.0</td>
+<td>2021-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>5</td>
+<td>Saturday</td>
+<td>January</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">6238</th>
+<td>January 30</td>
+<td>2022</td>
+<td>27</td>
+<td>11</td>
+<td>0.00</td>
+<td>0.0</td>
+<td>2022-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>6</td>
+<td>Sunday</td>
+<td>January</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">6603</th>
+<td>January 30</td>
+<td>2023</td>
+<td>54</td>
+<td>37</td>
+<td>0.00</td>
+<td>0.0</td>
+<td>2023-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>0</td>
+<td>Monday</td>
+<td>January</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">6968</th>
+<td>January 30</td>
+<td>2024</td>
+<td>39</td>
+<td>34</td>
+<td>0.00</td>
+<td>0.0</td>
+<td>2024-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>1</td>
+<td>Tuesday</td>
+<td>January</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">7334</th>
+<td>January 30</td>
+<td>2025</td>
+<td>42</td>
+<td>29</td>
+<td>0.00</td>
+<td>0.0</td>
+<td>2025-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>3</td>
+<td>Thursday</td>
+<td>January</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="a-what-was-the-average-fahrenheit-for-the-day" class="level2">
+<h2 class="anchored" data-anchor-id="a-what-was-the-average-fahrenheit-for-the-day">A) What was the average fahrenheit for the day?</h2>
+<div id="6622d56c-7125-4a27-927f-0bae8480c55f" class="cell" data-execution_count="9">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>birthday <span class="op">=</span> weather_df.query(<span class="st">'day == "January 30"'</span>) </span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>temp_avg <span class="op">=</span> (birthday[<span class="st">'high'</span>] <span class="op">+</span> birthday[<span class="st">'low'</span>])<span class="op">/</span><span class="dv">2</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>weather_df <span class="op">=</span> weather_df.assign(temp_avg<span class="op">=</span>(weather_df[<span class="st">'high'</span>]<span class="op">+</span>weather_df[<span class="st">'low'</span>])<span class="op">/</span><span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="3b05cb94-34d6-4369-a695-22dc421f2502" class="cell" data-execution_count="10">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>weather_df.query(<span class="st">'day =="January 30"'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="10">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">day</th>
+<th data-quarto-table-cell-role="th">year</th>
+<th data-quarto-table-cell-role="th">high</th>
+<th data-quarto-table-cell-role="th">low</th>
+<th data-quarto-table-cell-role="th">rain</th>
+<th data-quarto-table-cell-role="th">snow</th>
+<th data-quarto-table-cell-role="th">date</th>
+<th data-quarto-table-cell-role="th">day_num</th>
+<th data-quarto-table-cell-role="th">month_num</th>
+<th data-quarto-table-cell-role="th">dow</th>
+<th data-quarto-table-cell-role="th">dow_name</th>
+<th data-quarto-table-cell-role="th">month</th>
+<th data-quarto-table-cell-role="th">temp_avg</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">29</th>
+<td>January 30</td>
+<td>2005</td>
+<td>36</td>
+<td>26</td>
+<td>0.15</td>
+<td>1.3</td>
+<td>2005-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>6</td>
+<td>Sunday</td>
+<td>January</td>
+<td>31.0</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">394</th>
+<td>January 30</td>
+<td>2006</td>
+<td>62</td>
+<td>37</td>
+<td>0.00</td>
+<td>0.0</td>
+<td>2006-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>0</td>
+<td>Monday</td>
+<td>January</td>
+<td>49.5</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">759</th>
+<td>January 30</td>
+<td>2007</td>
+<td>39</td>
+<td>20</td>
+<td>0.02</td>
+<td>0.2</td>
+<td>2007-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>1</td>
+<td>Tuesday</td>
+<td>January</td>
+<td>29.5</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1124</th>
+<td>January 30</td>
+<td>2008</td>
+<td>49</td>
+<td>29</td>
+<td>0.05</td>
+<td>0.0</td>
+<td>2008-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>2</td>
+<td>Wednesday</td>
+<td>January</td>
+<td>39.0</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">1490</th>
+<td>January 30</td>
+<td>2009</td>
+<td>36</td>
+<td>22</td>
+<td>0.00</td>
+<td>0.0</td>
+<td>2009-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>4</td>
+<td>Friday</td>
+<td>January</td>
+<td>29.0</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1855</th>
+<td>January 30</td>
+<td>2010</td>
+<td>21</td>
+<td>16</td>
+<td>0.10</td>
+<td>2.1</td>
+<td>2010-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>5</td>
+<td>Saturday</td>
+<td>January</td>
+<td>18.5</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2220</th>
+<td>January 30</td>
+<td>2011</td>
+<td>39</td>
+<td>18</td>
+<td>0.00</td>
+<td>0.0</td>
+<td>2011-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>6</td>
+<td>Sunday</td>
+<td>January</td>
+<td>28.5</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">2585</th>
+<td>January 30</td>
+<td>2012</td>
+<td>42</td>
+<td>33</td>
+<td>0.00</td>
+<td>0.0</td>
+<td>2012-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>0</td>
+<td>Monday</td>
+<td>January</td>
+<td>37.5</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2951</th>
+<td>January 30</td>
+<td>2013</td>
+<td>68</td>
+<td>38</td>
+<td>0.32</td>
+<td>0.0</td>
+<td>2013-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>2</td>
+<td>Wednesday</td>
+<td>January</td>
+<td>53.0</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3316</th>
+<td>January 30</td>
+<td>2014</td>
+<td>28</td>
+<td>10</td>
+<td>0.00</td>
+<td>0.0</td>
+<td>2014-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>3</td>
+<td>Thursday</td>
+<td>January</td>
+<td>19.0</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">3681</th>
+<td>January 30</td>
+<td>2015</td>
+<td>42</td>
+<td>20</td>
+<td>0.00</td>
+<td>0.1</td>
+<td>2015-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>4</td>
+<td>Friday</td>
+<td>January</td>
+<td>31.0</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">4046</th>
+<td>January 30</td>
+<td>2016</td>
+<td>41</td>
+<td>26</td>
+<td>0.00</td>
+<td>0.0</td>
+<td>2016-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>5</td>
+<td>Saturday</td>
+<td>January</td>
+<td>33.5</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4412</th>
+<td>January 30</td>
+<td>2017</td>
+<td>39</td>
+<td>27</td>
+<td>0.02</td>
+<td>0.8</td>
+<td>2017-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>0</td>
+<td>Monday</td>
+<td>January</td>
+<td>33.0</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">4777</th>
+<td>January 30</td>
+<td>2018</td>
+<td>38</td>
+<td>22</td>
+<td>0.14</td>
+<td>0.3</td>
+<td>2018-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>1</td>
+<td>Tuesday</td>
+<td>January</td>
+<td>30.0</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">5142</th>
+<td>January 30</td>
+<td>2019</td>
+<td>35</td>
+<td>7</td>
+<td>0.01</td>
+<td>0.2</td>
+<td>2019-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>2</td>
+<td>Wednesday</td>
+<td>January</td>
+<td>21.0</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">5507</th>
+<td>January 30</td>
+<td>2020</td>
+<td>39</td>
+<td>25</td>
+<td>0.00</td>
+<td>0.0</td>
+<td>2020-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>3</td>
+<td>Thursday</td>
+<td>January</td>
+<td>32.0</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">5873</th>
+<td>January 30</td>
+<td>2021</td>
+<td>35</td>
+<td>19</td>
+<td>0.00</td>
+<td>0.0</td>
+<td>2021-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>5</td>
+<td>Saturday</td>
+<td>January</td>
+<td>27.0</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">6238</th>
+<td>January 30</td>
+<td>2022</td>
+<td>27</td>
+<td>11</td>
+<td>0.00</td>
+<td>0.0</td>
+<td>2022-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>6</td>
+<td>Sunday</td>
+<td>January</td>
+<td>19.0</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">6603</th>
+<td>January 30</td>
+<td>2023</td>
+<td>54</td>
+<td>37</td>
+<td>0.00</td>
+<td>0.0</td>
+<td>2023-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>0</td>
+<td>Monday</td>
+<td>January</td>
+<td>45.5</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">6968</th>
+<td>January 30</td>
+<td>2024</td>
+<td>39</td>
+<td>34</td>
+<td>0.00</td>
+<td>0.0</td>
+<td>2024-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>1</td>
+<td>Tuesday</td>
+<td>January</td>
+<td>36.5</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">7334</th>
+<td>January 30</td>
+<td>2025</td>
+<td>42</td>
+<td>29</td>
+<td>0.00</td>
+<td>0.0</td>
+<td>2025-01-30</td>
+<td>30</td>
+<td>1</td>
+<td>3</td>
+<td>Thursday</td>
+<td>January</td>
+<td>35.5</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="fad39775-51f9-4680-b52c-bf9bc155d114" class="cell" data-execution_count="12">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>birthday_mean_temp <span class="op">=</span> temp_avg.mean()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="4aad17dc-9dc6-4b43-a58a-0bde977f1fa7" class="cell" data-execution_count="13">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>birthday_mean_temp</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="13">
+<pre><code>np.float64(32.30952380952381)</code></pre>
+</div>
+</div>
+<section id="since-i-was-born-in-2006-combining-the-weather-data-of-philadelphia-for-the-past-twenty-years-the-average-fahrenheit-on-my-birthday-in-philadelphia-is-32.3-degrees." class="level4">
+<h4 class="anchored" data-anchor-id="since-i-was-born-in-2006-combining-the-weather-data-of-philadelphia-for-the-past-twenty-years-the-average-fahrenheit-on-my-birthday-in-philadelphia-is-32.3-degrees.">Since I was born in 2006, combining the weather data of Philadelphia for the past twenty years, the average fahrenheit on my birthday in Philadelphia is 32.3 degrees.</h4>
+</section>
+</section>
+<section id="b-did-it-rain" class="level2">
+<h2 class="anchored" data-anchor-id="b-did-it-rain">B) Did it rain?</h2>
+<div id="b0246db4-ed51-45f9-88e0-f8df7fe20595" class="cell" data-execution_count="14">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>birthday <span class="op">=</span> weather_df.query(<span class="st">'day == "January 30"'</span>) </span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>is_rain <span class="op">=</span> birthday[<span class="st">'rain'</span>]<span class="op">&gt;</span><span class="dv">0</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="22bbd0db-2ea5-4278-b25a-49c49bbc6bcd" class="cell" data-execution_count="15">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>is_rain</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="15">
+<pre><code>29       True
+394     False
+759      True
+1124     True
+1490    False
+1855     True
+2220    False
+2585    False
+2951     True
+3316    False
+3681    False
+4046    False
+4412     True
+4777     True
+5142     True
+5507    False
+5873    False
+6238    False
+6603    False
+6968    False
+7334    False
+Name: rain, dtype: bool</code></pre>
+</div>
+</div>
+<div id="df4cabfa-78d9-4c8f-8d4b-80e5f805ac7e" class="cell" data-execution_count="16">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>is_rain.value_counts()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="16">
+<pre><code>rain
+False    13
+True      8
+Name: count, dtype: int64</code></pre>
+</div>
+</div>
+<section id="since-i-was-born-in-2006-majority-of-the-years-since-i-was-alive-on-the-day-of-my-birthday-in-philadelphia-it-did-not-rain.-13-years-it-did-not-and-7-years-it-did." class="level4">
+<h4 class="anchored" data-anchor-id="since-i-was-born-in-2006-majority-of-the-years-since-i-was-alive-on-the-day-of-my-birthday-in-philadelphia-it-did-not-rain.-13-years-it-did-not-and-7-years-it-did.">Since I was born in 2006, majority of the years since I was alive on the day of my birthday in Philadelphia it did not rain. (13 years it did not and 7 years it did).</h4>
+</section>
+</section>
+<section id="c-did-it-snow" class="level2">
+<h2 class="anchored" data-anchor-id="c-did-it-snow">C) Did it snow?</h2>
+<div id="65952e32-0544-42af-bdf3-8578f7566065" class="cell" data-execution_count="19">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>birthday <span class="op">=</span> weather_df.query(<span class="st">'day == "January 30"'</span>) </span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>is_snow <span class="op">=</span> birthday[<span class="st">'snow'</span>]<span class="op">&gt;</span><span class="dv">0</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="57aa510f-e6f7-4cb6-9566-3d9fb06cfeba" class="cell" data-execution_count="20">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>is_snow.value_counts()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="20">
+<pre><code>snow
+False    14
+True      7
+Name: count, dtype: int64</code></pre>
+</div>
+</div>
+<section id="since-i-was-born-in-2006-majority-of-the-years-since-i-was-alive-on-the-day-of-my-birthday-in-philadelphia-it-did-not-snow.-14-years-it-did-not-and-6-years-it-did." class="level4">
+<h4 class="anchored" data-anchor-id="since-i-was-born-in-2006-majority-of-the-years-since-i-was-alive-on-the-day-of-my-birthday-in-philadelphia-it-did-not-snow.-14-years-it-did-not-and-6-years-it-did.">Since I was born in 2006, majority of the years since I was alive on the day of my birthday in Philadelphia it did not snow. (14 years it did not and 6 years it did).</h4>
+</section>
+</section>
+<section id="d-what-day-of-the-week-was-it" class="level2">
+<h2 class="anchored" data-anchor-id="d-what-day-of-the-week-was-it">D) What day of the week was it?</h2>
+<div id="d68cf83e-c29d-4801-ab90-4f5a31508743" class="cell" data-execution_count="22">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>weather_df.query(<span class="st">'day == "January 30"'</span>) [<span class="st">'dow_name'</span>].value_counts()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="22">
+<pre><code>dow_name
+Monday       4
+Sunday       3
+Tuesday      3
+Wednesday    3
+Saturday     3
+Thursday     3
+Friday       2
+Name: count, dtype: int64</code></pre>
+</div>
+</div>
+<section id="since-i-was-born-in-2006-the-largest-amount-of-my-birthdays-have-fallen-on-a-monday." class="level4">
+<h4 class="anchored" data-anchor-id="since-i-was-born-in-2006-the-largest-amount-of-my-birthdays-have-fallen-on-a-monday.">Since I was born in 2006, the largest amount of my birthdays have fallen on a Monday.</h4>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>The weather in Philadelphia on the days of my birthday for the past twenty years was something I was curious about, especially to see if there was a pattern that I can relate back to myself. I found that majority of my birthdays fell on a Monday, it did snow nor rain for most of the years, and the avgerage temperature was 32 degrees on my birthdays put together. So overall, most of my birthdays throughout the years here in Philadelphia were not extremely cold, but still on the chillier side. I find that interesting, because I spent my recent birthday in 2026 freezing, because of how cold it was from the piled up snow from the previous snow storm and high winds. I thought this was the norm weather here in Philadelphia on Jan 30, but referencing past years’ data it shows otherwise. This was an interesting finding.</p>
 
 
 </section>
