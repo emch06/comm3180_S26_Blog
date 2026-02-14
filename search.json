@@ -7,20 +7,6 @@
     "text": "Hello my name is Emilie Chi! I am currently a sophomore at the University of Pennsylvania, and am majoring in Communications (Concentration: Data and Network Science) and minoring in Consumer Psychology. This blog will capture my exploration and experimentation of language Models in my ‘Stories from data: Programming for Data Journalism’ UPENN Clas"
   },
   {
-    "objectID": "posts/002_task_1/task_1.html",
-    "href": "posts/002_task_1/task_1.html",
-    "title": "Task #1 in experimenting with website",
-    "section": "",
-    "text": "Let’s hope this works out!"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "My Data Stories",
-    "section": "",
-    "text": "Dataset of the Week #1: The Weather in Philadelphia\n\n\n\nDOW\n\nWeather\n\n\n\n\n\n\n\n\n\nJan 28, 2026\n\n\nEmilie\n\n\n\n\n\n\n\n\n\n\n\n\nTask #1 in experimenting with website\n\n\n\nLLMs\n\nExperiment\n\n\n\nHow to make a new post appear\n\n\n\n\n\nJan 23, 2026\n\n\nEmilie\n\n\n\n\n\n\n\n\n\n\n\n\nA test post\n\n\n\nvisualization\n\ndata stories\n\ntesting\n\n\n\nAn example post from a Jupyter notebook\n\n\n\n\n\nJan 12, 2026\n\n\nAn LLM User\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "posts/000_test_post/index.html",
     "href": "posts/000_test_post/index.html",
     "title": "A test post",
@@ -33,6 +19,34 @@
     "title": "A test post",
     "section": "Stories from data",
     "text": "Stories from data\n\nLet’s set up some data\n\n\nx = ['A', 'B', 'C']\ny = [1, 5, 3]\n\n\nNow let’s visualize it\n\nplt.bar(x, y)\nplt.show()"
+  },
+  {
+    "objectID": "posts/002_task_1/task_1.html",
+    "href": "posts/002_task_1/task_1.html",
+    "title": "Task #1 in experimenting with website",
+    "section": "",
+    "text": "Let’s hope this works out!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "My Data Stories",
+    "section": "",
+    "text": "Is extroversion related to race?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDataset of the Week #1: The Weather in Philadelphia\n\n\n\nDOW\n\nWeather\n\n\n\n\n\n\n\n\n\nJan 28, 2026\n\n\nEmilie\n\n\n\n\n\n\n\n\n\n\n\n\nTask #1 in experimenting with website\n\n\n\nLLMs\n\nExperiment\n\n\n\nHow to make a new post appear\n\n\n\n\n\nJan 23, 2026\n\n\nEmilie\n\n\n\n\n\n\n\n\n\n\n\n\nA test post\n\n\n\nvisualization\n\ndata stories\n\ntesting\n\n\n\nAn example post from a Jupyter notebook\n\n\n\n\n\nJan 12, 2026\n\n\nAn LLM User\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/003_DOW2_Analysis /DOW2.html#defining-extroversion-in-this-big-data-set",
+    "href": "posts/003_DOW2_Analysis /DOW2.html#defining-extroversion-in-this-big-data-set",
+    "title": "Is extroversion related to race?",
+    "section": "Defining extroversion in this big data set:",
+    "text": "Defining extroversion in this big data set:\nTo actually start finding the answer to the question, I have to find the extroversion score for each user. To find extroversion from the entire test, I summed the responses (numerical values 1-being strong no, 2-being strong yes) of these five questions in the 49 question set that described extroverted qualities in the best capacity: - E1: “I am the life of the party” - E3: “I feel comfortable around peoplea - E5:”I start conversations” - E7: “I talk to a lot of different people at parties” - E9: “I don’t mind being the center of attention”\n\nEach numerical value for the questions were added to make a total that defined each user’s Extroversion Value:\n\nbig5_df[\"E_value\"] = big5_df[[\"E1\", \"E3\", \"E5\", \"E7\", \"E9\" ]].sum(axis=1)\n\n\n\nThis would create a seperate column in the compiled chart that gave each user an Extroversion score or E_value\n\n\nIt looked something like this:\n\nbig5_df.head(5)\n\n\n\n\n\n\n\n\nrace\nage\nengnat\ngender\nhand\nsource\ncountry\nE1\nE2\nE3\n...\nO3\nO4\nO5\nO6\nO7\nO8\nO9\nO10\nrace_cat\nE_value\n\n\n\n\n0\n3\n53\n1\n1\n1\n1\nUS\n4\n2\n5\n...\n3\n1\n5\n1\n4\n2\n5\n5\nCaucasian (European)\n23\n\n\n1\n13\n46\n1\n2\n1\n1\nUS\n2\n2\n3\n...\n3\n3\n2\n3\n3\n1\n3\n2\nOther\n10\n\n\n2\n1\n14\n2\n2\n1\n1\nPK\n5\n1\n1\n...\n5\n1\n5\n1\n5\n5\n5\n5\nMixed Race\n17\n\n\n3\n3\n19\n2\n2\n1\n1\nRO\n2\n5\n2\n...\n5\n2\n4\n2\n5\n2\n5\n5\nCaucasian (European)\n14\n\n\n4\n11\n25\n2\n2\n1\n2\nUS\n3\n1\n3\n...\n1\n1\n3\n1\n3\n1\n5\n3\nSouth East Asian (Chinese, Thai, Malay, Filipi...\n15\n\n\n\n\n5 rows × 59 columns\n\n\n\n\n\nNow I had to find the important stuff which was association. This was found by grouping each user by race, and then averaging the Extroversion scores (E_value) to calculate the total average extroversion score for each race:\n\ngroup = big5_df.groupby(\"race_cat\") \n\n\nrace_avg = group[\"E_value\"].mean()"
+  },
+  {
+    "objectID": "posts/003_DOW2_Analysis /DOW2.html#results-raw-data",
+    "href": "posts/003_DOW2_Analysis /DOW2.html#results-raw-data",
+    "title": "Is extroversion related to race?",
+    "section": "Results Raw Data:",
+    "text": "Results Raw Data:\nThe number accompanying each race is the average extroversion score (the higher the number, the higher the extroversion level)\n\nrace_avg\n\nrace_cat\nArctic (Siberian, Eskimo)                                   19.214286\nCaucasian (European)                                        15.264591\nCaucasian (Indian)                                          15.922925\nCaucasian (Middle East)                                     15.809709\nCaucasian (North African, Other)                            15.415617\nIndigenous Australian                                       16.208333\nMixed Race                                                  15.488145\nNative American                                             15.706468\nNorth East Asian (Mongol, Tibetan, Korean Japanese, etc)    15.319149\nOther                                                       15.969448\nPacific (Polynesian, Micronesian, etc)                      15.753846\nSouth East Asian (Chinese, Thai, Malay, Filipino, etc)      14.980656\nWest African, Bushmen, Ethiopian                            16.374517\nmissed                                                      15.398693\nName: E_value, dtype: float64"
   },
   {
     "objectID": "posts/001_DOW1_Weather/DOW1.html",

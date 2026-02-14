@@ -2,22 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://emch06.github.io/comm3180_S26_Blog/about.html</loc>
-    <lastmod>2026-02-09T00:06:30.393Z</lastmod>
-  </url>
-  <url>
-    <loc>https://emch06.github.io/comm3180_S26_Blog/posts/002_task_1/task_1.html</loc>
-    <lastmod>2026-02-09T00:06:30.402Z</lastmod>
-  </url>
-  <url>
-    <loc>https://emch06.github.io/comm3180_S26_Blog/index.html</loc>
-    <lastmod>2026-02-09T00:06:30.393Z</lastmod>
+    <lastmod>2026-02-14T06:54:53.583Z</lastmod>
   </url>
   <url>
     <loc>https://emch06.github.io/comm3180_S26_Blog/posts/000_test_post/index.html</loc>
-    <lastmod>2026-02-09T00:06:30.400Z</lastmod>
+    <lastmod>2026-02-14T06:54:53.590Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emch06.github.io/comm3180_S26_Blog/posts/002_task_1/task_1.html</loc>
+    <lastmod>2026-02-14T06:54:53.592Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emch06.github.io/comm3180_S26_Blog/index.html</loc>
+    <lastmod>2026-02-14T06:54:53.583Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emch06.github.io/comm3180_S26_Blog/posts/002_task_1/Untitled.html</loc>
+    <lastmod>2026-02-14T06:54:53.591Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emch06.github.io/comm3180_S26_Blog/posts/003_DOW2_Analysis /DOW2.html</loc>
+    <lastmod>2026-02-14T06:54:53.592Z</lastmod>
   </url>
   <url>
     <loc>https://emch06.github.io/comm3180_S26_Blog/posts/001_DOW1_Weather/DOW1.html</loc>
-    <lastmod>2026-02-09T00:06:30.400Z</lastmod>
+    <lastmod>2026-02-14T06:54:53.590Z</lastmod>
   </url>
 </urlset>
