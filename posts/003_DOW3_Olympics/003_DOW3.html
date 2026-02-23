@@ -1,0 +1,2557 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Emilie">
+<meta name="dcterms.date" content="2026-02-22">
+
+<title>What makes up an ideal hockey player – My Data Stories</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-8fd1faf6fd93e4e6d207ae0f9db51d78.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">My Data Stories</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About ME</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">What makes up an ideal hockey player</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">DOW</div>
+                <div class="quarto-category">Hockey</div>
+                <div class="quarto-category">Olympics</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Emilie </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">February 22, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<section id="what-makes-up-an-ideal-hockey-player" class="level1">
+<h1>What makes up an ideal hockey player?</h1>
+<p><img src="img/beginning.png" class="img-fluid" width="800"></p>
+<p>Since women’s hockey officially became an Olympic sport in 1998, either USA or Canada has won each winter olympics cycle.</p>
+<section id="olympic-womens-hockey-gold-medal-winners" class="level3">
+<h3 class="anchored" data-anchor-id="olympic-womens-hockey-gold-medal-winners">Olympic Women’s Hockey Gold Medal Winners</h3>
+<ul>
+<li><strong>2022</strong> (Beijing): Canada</li>
+<li><strong>2018</strong> (Pyeongchang): USA</li>
+<li><strong>2014</strong> (Sochi): Canada</li>
+<li><strong>2010</strong> (Vancouver): Canada</li>
+<li><strong>2006</strong> (Torino): Canada</li>
+<li><strong>2002</strong> (Salt Lake City): Canada</li>
+<li><strong>1998</strong> (Nagano): USA</li>
+</ul>
+<p><strong>This made wonder what makes these two teams so dominant in ice hockey? And are there traits that can make up an ideal hockey player?</strong></p>
+<div id="2c559f3c-04aa-4e0b-910d-2ebfa0be9b27" class="cell" data-execution_count="4">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="cd5f61ba-237e-4461-90a3-b9f270b613c9" class="cell" data-execution_count="6">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>medals_df <span class="op">=</span> pd.read_csv(<span class="st">'data/winter_olympics_medals.csv'</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>athletes_df <span class="op">=</span> pd.read_csv(<span class="st">'data/bios.csv'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="fac7896b-342f-4f7d-bfe6-92e185157687" class="cell" data-execution_count="21">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>canada_gold <span class="op">=</span> medals_df.query(<span class="st">"event == 'Ice Hockey, Women (Olympic)' and team == 'Canada' and medal == 'Gold'"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="062f51f8-fb45-4cd6-aa3c-4b3721f80963" class="cell" data-execution_count="31">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>Canada_players <span class="op">=</span> canada_gold[<span class="st">"as"</span>].drop_duplicates()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><img src="img/canada_flag.png" class="img-fluid" width="600"></p>
+<section id="all-of-canadas-women-hockey-players-that-won-gold-so-far" class="level4">
+<h4 class="anchored" data-anchor-id="all-of-canadas-women-hockey-players-that-won-gold-so-far"><strong>All of Canada’s women hockey players that won gold so far:</strong></h4>
+<div id="1ca45abd-a4ac-4a8d-90c2-eaa73f84bfb9" class="cell" data-execution_count="33">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>Canada_players</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="33">
+<pre><code>34561     Jennifer Botterill
+34565        Thérèse Brisson
+34567        Cassie Campbell
+34572            Lori Dupuis
+34574       Danielle Goyette
+34577       Geraldine Heaney
+34579          Jayna Hefford
+34584           Becky Kellar
+34595         Vicky Sunohara
+34598    Hayley Wickenheiser
+39198             Dana Antal
+39199          Kelly Béchard
+39200     Isabelle Chartrand
+39201     Caroline Ouellette
+39205           Cherie Piper
+39208         Cheryl Pounder
+39210     Tammy Lee Shewchuk
+39211          Sami Jo Small
+39212      Colleen Sostorics
+39215          Kim St-Pierre
+42317        Gillian Ferrari
+42318           Gillian Apps
+42321          Carla MacLeod
+42325          Meghan Agosta
+42329      Katie Weatherston
+42330     Sarah Vaillancourt
+42332         Gina Kingsbury
+42334        Charlie Labonté
+47122         Catherine Ward
+47174            Haley Irwin
+47285    Marie-Philip Poulin
+47309      Meaghan Mikkelson
+47388       Rebecca Johnston
+47432       Shannon Szabados
+47447         Tessa Bonhomme
+49644         Mélodie Daoust
+49647          Laura Fortino
+49649         Brianne Jenner
+49652      Jocelyne Larocque
+49655       Lauriane Rougeau
+49657        Natalie Spooner
+49660         Jenn Wakefield
+49662          Tara Watchorn
+54331            Emily Clark
+54333     Ann-Renée Desbiens
+54335            Renata Fast
+54338            Sarah Nurse
+54340       Jillian Saulnier
+54342           Laura Stacey
+54344        Blayre Turnbull
+62822           Erin Ambrose
+62823            Ashton Bell
+62824       Kristen Campbell
+62825          Sarah Fillier
+62826           Emma Maltais
+62827    Emerance Maschmeyer
+62828      Jamie Lee Rattray
+62829           Ella Shelton
+62830        Claire Thompson
+62831      Micah Zandee-Hart
+Name: as, dtype: str</code></pre>
+</div>
+</div>
+<div id="c49ebda1-1baa-491f-b185-830f2e1c8077" class="cell" data-execution_count="36">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>Canada_bios <span class="op">=</span> athletes_df[athletes_df[<span class="st">"name"</span>].isin(Canada_players)]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><img src="img/canada_ace.png" class="img-fluid" width="400"></p>
+</section>
+<section id="canada-womens-hockey-players-that-won-gold-individual-bios" class="level4">
+<h4 class="anchored" data-anchor-id="canada-womens-hockey-players-that-won-gold-individual-bios"><strong>Canada women’s hockey players that won gold individual bios:</strong></h4>
+<div id="171a951e-c544-4484-8b29-6e5a5ffa1c87" class="cell" data-execution_count="37">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>Canada_bios</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="37">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">athlete_id</th>
+<th data-quarto-table-cell-role="th">name</th>
+<th data-quarto-table-cell-role="th">born_date</th>
+<th data-quarto-table-cell-role="th">born_city</th>
+<th data-quarto-table-cell-role="th">born_region</th>
+<th data-quarto-table-cell-role="th">born_country</th>
+<th data-quarto-table-cell-role="th">NOC</th>
+<th data-quarto-table-cell-role="th">height_cm</th>
+<th data-quarto-table-cell-role="th">weight_kg</th>
+<th data-quarto-table-cell-role="th">died_date</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">99553</th>
+<td>100352</td>
+<td>Jennifer Botterill</td>
+<td>1979-05-01</td>
+<td>Ottawa</td>
+<td>Ontario</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>175.0</td>
+<td>71.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">99554</th>
+<td>100353</td>
+<td>Thérèse Brisson</td>
+<td>1966-10-05</td>
+<td>Montréal</td>
+<td>Québec</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>170.0</td>
+<td>68.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">99555</th>
+<td>100354</td>
+<td>Cassie Campbell</td>
+<td>1973-11-22</td>
+<td>Richmond Hill</td>
+<td>Ontario</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>170.0</td>
+<td>66.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">99558</th>
+<td>100357</td>
+<td>Lori Dupuis</td>
+<td>1972-11-14</td>
+<td>Cornwall</td>
+<td>Ontario</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>173.0</td>
+<td>75.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">99559</th>
+<td>100358</td>
+<td>Danielle Goyette</td>
+<td>1966-01-30</td>
+<td>Saint-Nazaire</td>
+<td>Québec</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>168.0</td>
+<td>70.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">99560</th>
+<td>100359</td>
+<td>Geraldine Heaney</td>
+<td>1967-10-01</td>
+<td>Lurgan</td>
+<td>Northern Ireland</td>
+<td>GBR</td>
+<td>Canada</td>
+<td>173.0</td>
+<td>64.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">99561</th>
+<td>100360</td>
+<td>Jayna Hefford</td>
+<td>1977-05-14</td>
+<td>Trenton</td>
+<td>Ontario</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>163.0</td>
+<td>63.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">99562</th>
+<td>100361</td>
+<td>Becky Kellar</td>
+<td>1975-01-01</td>
+<td>Hagersville</td>
+<td>Ontario</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>170.0</td>
+<td>71.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">99570</th>
+<td>100369</td>
+<td>Vicky Sunohara</td>
+<td>1970-05-18</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Canada</td>
+<td>170.0</td>
+<td>75.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">99571</th>
+<td>100370</td>
+<td>Hayley Wickenheiser</td>
+<td>1978-08-12</td>
+<td>Shaunavon</td>
+<td>Saskatchewan</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>178.0</td>
+<td>77.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">101207</th>
+<td>102076</td>
+<td>Dana Antal</td>
+<td>1977-04-19</td>
+<td>Saskatoon</td>
+<td>Saskatchewan</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>170.0</td>
+<td>64.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">101208</th>
+<td>102077</td>
+<td>Kelly Béchard</td>
+<td>1978-01-22</td>
+<td>Sedley</td>
+<td>Saskatchewan</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>175.0</td>
+<td>66.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">101209</th>
+<td>102078</td>
+<td>Isabelle Chartrand</td>
+<td>1978-04-20</td>
+<td>Montréal</td>
+<td>Québec</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>165.0</td>
+<td>62.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">101210</th>
+<td>102079</td>
+<td>Caroline Ouellette</td>
+<td>1979-05-25</td>
+<td>Montréal</td>
+<td>Québec</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>180.0</td>
+<td>77.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">101211</th>
+<td>102080</td>
+<td>Cherie Piper</td>
+<td>1981-06-29</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Canada</td>
+<td>168.0</td>
+<td>76.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">101212</th>
+<td>102081</td>
+<td>Cheryl Pounder</td>
+<td>1976-06-21</td>
+<td>Montréal</td>
+<td>Québec</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>165.0</td>
+<td>64.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">101213</th>
+<td>102082</td>
+<td>Tammy Lee Shewchuk</td>
+<td>1977-12-31</td>
+<td>Pointe-Claire</td>
+<td>Québec</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>163.0</td>
+<td>60.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">101214</th>
+<td>102083</td>
+<td>Sami Jo Small</td>
+<td>1976-03-25</td>
+<td>Winnipeg</td>
+<td>Manitoba</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>170.0</td>
+<td>85.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">101215</th>
+<td>102084</td>
+<td>Colleen Sostorics</td>
+<td>1979-12-17</td>
+<td>Kennedy</td>
+<td>Saskatchewan</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>163.0</td>
+<td>76.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">101216</th>
+<td>102085</td>
+<td>Kim St-Pierre</td>
+<td>1978-12-14</td>
+<td>Châteauguay</td>
+<td>Québec</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>175.0</td>
+<td>71.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">109061</th>
+<td>110243</td>
+<td>Gillian Ferrari</td>
+<td>1980-06-23</td>
+<td>Thornhill</td>
+<td>Ontario</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>173.0</td>
+<td>73.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">109062</th>
+<td>110244</td>
+<td>Gillian Apps</td>
+<td>1983-11-02</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Canada</td>
+<td>180.0</td>
+<td>80.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">109063</th>
+<td>110245</td>
+<td>Carla MacLeod</td>
+<td>1982-06-16</td>
+<td>Spruce Grove</td>
+<td>Alberta</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>163.0</td>
+<td>63.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">109066</th>
+<td>110248</td>
+<td>Meghan Agosta</td>
+<td>1987-02-12</td>
+<td>Windsor</td>
+<td>Ontario</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>168.0</td>
+<td>67.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">109067</th>
+<td>110249</td>
+<td>Katie Weatherston</td>
+<td>1983-04-06</td>
+<td>Thunder Bay</td>
+<td>Ontario</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>163.0</td>
+<td>66.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">109068</th>
+<td>110250</td>
+<td>Sarah Vaillancourt</td>
+<td>1985-05-08</td>
+<td>Sherbrooke</td>
+<td>Québec</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>168.0</td>
+<td>63.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">109069</th>
+<td>110251</td>
+<td>Gina Kingsbury</td>
+<td>1981-11-26</td>
+<td>Uranium City</td>
+<td>Saskatchewan</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>173.0</td>
+<td>62.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">109070</th>
+<td>110252</td>
+<td>Charlie Labonté</td>
+<td>1982-10-15</td>
+<td>Greenfield Park</td>
+<td>Québec</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>175.0</td>
+<td>72.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">117659</th>
+<td>119176</td>
+<td>Catherine Ward</td>
+<td>1987-02-27</td>
+<td>Montréal</td>
+<td>Québec</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>168.0</td>
+<td>67.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">117691</th>
+<td>119212</td>
+<td>Haley Irwin</td>
+<td>1988-06-06</td>
+<td>Thunder Bay</td>
+<td>Ontario</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>170.0</td>
+<td>78.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">117757</th>
+<td>119286</td>
+<td>Marie-Philip Poulin</td>
+<td>1991-03-28</td>
+<td>Québec City</td>
+<td>Québec</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>169.0</td>
+<td>72.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">117771</th>
+<td>119300</td>
+<td>Meaghan Mikkelson</td>
+<td>1985-01-04</td>
+<td>Regina</td>
+<td>Saskatchewan</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>175.0</td>
+<td>67.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">117816</th>
+<td>119353</td>
+<td>Rebecca Johnston</td>
+<td>1989-09-24</td>
+<td>Sudbury</td>
+<td>Ontario</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>175.0</td>
+<td>67.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">117837</th>
+<td>119377</td>
+<td>Shannon Szabados</td>
+<td>1986-08-06</td>
+<td>Edmonton</td>
+<td>Alberta</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>175.0</td>
+<td>65.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">117846</th>
+<td>119388</td>
+<td>Tessa Bonhomme</td>
+<td>1985-07-23</td>
+<td>Sudbury</td>
+<td>Ontario</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>170.0</td>
+<td>63.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">125146</th>
+<td>127490</td>
+<td>Mélodie Daoust</td>
+<td>1992-01-07</td>
+<td>Salaberry-de-Valleyfield</td>
+<td>Québec</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>163.0</td>
+<td>71.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">125147</th>
+<td>127491</td>
+<td>Laura Fortino</td>
+<td>1991-01-30</td>
+<td>Hamilton</td>
+<td>Ontario</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>164.0</td>
+<td>62.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">125148</th>
+<td>127492</td>
+<td>Brianne Jenner</td>
+<td>1991-05-04</td>
+<td>Oakville</td>
+<td>Ontario</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>175.0</td>
+<td>70.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">125149</th>
+<td>127493</td>
+<td>Jocelyne Larocque</td>
+<td>1988-05-19</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Canada</td>
+<td>170.0</td>
+<td>63.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">125150</th>
+<td>127494</td>
+<td>Lauriane Rougeau</td>
+<td>1990-04-12</td>
+<td>Pointe-Claire</td>
+<td>Québec</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>173.0</td>
+<td>75.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">125151</th>
+<td>127495</td>
+<td>Natalie Spooner</td>
+<td>1990-10-17</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Canada</td>
+<td>178.0</td>
+<td>80.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">125152</th>
+<td>127496</td>
+<td>Jenn Wakefield</td>
+<td>1989-06-15</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Canada</td>
+<td>178.0</td>
+<td>77.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">125153</th>
+<td>127497</td>
+<td>Tara Watchorn</td>
+<td>1990-05-30</td>
+<td>Ajax</td>
+<td>Ontario</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>178.0</td>
+<td>76.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">133862</th>
+<td>136863</td>
+<td>Emily Clark</td>
+<td>1995-11-28</td>
+<td>Saskatoon</td>
+<td>Saskatchewan</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>170.0</td>
+<td>61.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">133863</th>
+<td>136864</td>
+<td>Ann-Renée Desbiens</td>
+<td>1994-04-10</td>
+<td>La Malbaie</td>
+<td>Québec</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>175.0</td>
+<td>73.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">133864</th>
+<td>136865</td>
+<td>Renata Fast</td>
+<td>1994-10-06</td>
+<td>Hamilton</td>
+<td>Ontario</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>168.0</td>
+<td>65.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">133866</th>
+<td>136867</td>
+<td>Sarah Nurse</td>
+<td>1995-01-04</td>
+<td>Burlington</td>
+<td>Ontario</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>175.0</td>
+<td>67.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">133867</th>
+<td>136868</td>
+<td>Jillian Saulnier</td>
+<td>1992-03-07</td>
+<td>Halifax</td>
+<td>Nova Scotia</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>165.0</td>
+<td>66.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">133868</th>
+<td>136869</td>
+<td>Laura Stacey</td>
+<td>1994-05-05</td>
+<td>Mississauga</td>
+<td>Ontario</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>178.0</td>
+<td>71.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">133869</th>
+<td>136870</td>
+<td>Blayre Turnbull</td>
+<td>1993-07-15</td>
+<td>New Glasgow</td>
+<td>Nova Scotia</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>170.0</td>
+<td>72.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">144273</th>
+<td>147959</td>
+<td>Erin Ambrose</td>
+<td>1994-04-30</td>
+<td>Newmarket</td>
+<td>Ontario</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>165.0</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">144274</th>
+<td>147960</td>
+<td>Ashton Bell</td>
+<td>1999-12-07</td>
+<td>Brandon</td>
+<td>Manitoba</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>174.0</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">144275</th>
+<td>147961</td>
+<td>Kristen Campbell</td>
+<td>1997-11-30</td>
+<td>Brandon</td>
+<td>Manitoba</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>175.0</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">144276</th>
+<td>147962</td>
+<td>Sarah Fillier</td>
+<td>2000-06-09</td>
+<td>Georgetown</td>
+<td>Ontario</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>163.0</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">144277</th>
+<td>147963</td>
+<td>Emma Maltais</td>
+<td>1999-11-04</td>
+<td>Cambridge</td>
+<td>Massachusetts</td>
+<td>USA</td>
+<td>Canada</td>
+<td>160.0</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">144278</th>
+<td>147964</td>
+<td>Emerance Maschmeyer</td>
+<td>1994-10-05</td>
+<td>Fort Saskatchewan</td>
+<td>Alberta</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>168.0</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">144279</th>
+<td>147965</td>
+<td>Jamie Lee Rattray</td>
+<td>1992-09-30</td>
+<td>Ottawa</td>
+<td>Ontario</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>168.0</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">144280</th>
+<td>147966</td>
+<td>Ella Shelton</td>
+<td>1998-01-19</td>
+<td>London</td>
+<td>Ontario</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>173.0</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">144281</th>
+<td>147967</td>
+<td>Claire Thompson</td>
+<td>1998-01-28</td>
+<td>Toronto</td>
+<td>Ontario</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>173.0</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">144282</th>
+<td>147968</td>
+<td>Micah Zandee-Hart</td>
+<td>1997-01-13</td>
+<td>Victoria</td>
+<td>British Columbia</td>
+<td>CAN</td>
+<td>Canada</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p><strong>Based on the data set, I accumulated some calculations that can maybe identify some consistences across the players:</strong></p>
+</section>
+</section>
+<section id="average-canada-womens-hockey-player-height-170.64-cm" class="level2">
+<h2 class="anchored" data-anchor-id="average-canada-womens-hockey-player-height-170.64-cm">Average Canada women’s hockey player height = 170.64 cm</h2>
+<div id="ee28e7bc-1849-46f3-a008-4b9f353b1eab" class="cell" data-execution_count="40">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>avg_height <span class="op">=</span> Canada_bios[<span class="st">"height_cm"</span>].mean()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="d87ef606-be10-42ee-81a9-aff1bc13d32f" class="cell" data-execution_count="41">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>avg_height</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="41">
+<pre><code>np.float64(170.64406779661016)</code></pre>
+</div>
+</div>
+<div id="c14d2e42-e201-4d7f-a4e0-0dae46d6b7ce" class="cell" data-execution_count="43">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Average height:"</span>, <span class="bu">round</span>(avg_height, <span class="dv">2</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Average height: 170.64</code></pre>
+</div>
+</div>
+</section>
+<section id="average-canada-womens-hockey-player-weight-69.5-kg" class="level2">
+<h2 class="anchored" data-anchor-id="average-canada-womens-hockey-player-weight-69.5-kg">Average Canada women’s hockey player weight = 69.5 kg</h2>
+<div id="2be2223c-a0d4-4526-b83d-ec931ed12712" class="cell" data-execution_count="46">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>avg_weight <span class="op">=</span> Canada_bios[<span class="st">"weight_kg"</span>].mean()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="beb1a5b0-64e8-4090-a5bb-a3755e0a78ed" class="cell" data-execution_count="47">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>avg_weight</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="47">
+<pre><code>np.float64(69.5)</code></pre>
+</div>
+</div>
+<div id="e9089008-677b-4cd5-8d3c-7dfe5f360e00" class="cell" data-execution_count="50">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Average weight:"</span>, avg_weight)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Average weight: 69.5</code></pre>
+</div>
+</div>
+<p><img src="img/ontario.jpg" class="img-fluid" width="400"></p>
+</section>
+<section id="the-number-of-canadas-women-hockey-players-of-where-they-were-born" class="level2">
+<h2 class="anchored" data-anchor-id="the-number-of-canadas-women-hockey-players-of-where-they-were-born">The number of Canada’s women hockey players of where they were born</h2>
+<div id="3104f98a-bcf4-407b-b7fa-e08437cee099" class="cell" data-execution_count="51">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>Canada_bios[<span class="st">"born_region"</span>].value_counts()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="51">
+<pre><code>born_region
+Ontario             22
+Québec              14
+Saskatchewan         7
+Manitoba             3
+Alberta              3
+Nova Scotia          2
+Northern Ireland     1
+Massachusetts        1
+British Columbia     1
+Name: count, dtype: int64</code></pre>
+</div>
+</div>
+<p><img src="img/usa_flag.png" class="img-fluid" width="600"></p>
+</section>
+<section id="i-went-ahead-and-did-the-same-analysis-for-the-past-gold-winning-u.s.-womens-hockey-teams-as-well" class="level2">
+<h2 class="anchored" data-anchor-id="i-went-ahead-and-did-the-same-analysis-for-the-past-gold-winning-u.s.-womens-hockey-teams-as-well"><strong>I went ahead and did the same analysis for the past Gold winning U.S. Women’s Hockey Teams as well</strong></h2>
+<div id="5a9ba08b-3db4-419f-9812-068334f46954" class="cell" data-execution_count="28">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>US_gold <span class="op">=</span> medals_df.query(<span class="st">"event == 'Ice Hockey, Women (Olympic)' and team == 'United States' and medal == 'Gold'"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="7bc8b813-216d-4b6c-86e6-75b9a161afa2" class="cell" data-execution_count="29">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>US_players <span class="op">=</span> US_gold[<span class="st">"as"</span>].drop_duplicates()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<section id="all-of-u.ss-women-hockey-players-that-won-gold-so-far" class="level4">
+<h4 class="anchored" data-anchor-id="all-of-u.ss-women-hockey-players-that-won-gold-so-far"><strong>All of U.S’s women hockey players that won gold so far:</strong></h4>
+<div id="4b700b10-43b5-43bf-8ce7-308f5c01a4ab" class="cell" data-execution_count="30">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>US_players</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="30">
+<pre><code>34735                   Chris Bailey
+34737                   Laurie Baker
+34739                 Alana Blahoski
+34740              Lisa Brown-Miller
+34741                      Karyn Bye
+34743                  Colleen Coyne
+34744                   Sara DeCosta
+34746                    Tricia Dunn
+34749                  Cammi Granato
+34751                     Katie King
+34754                 Shelley Looney
+34756                       Sue Merz
+34758                  A. J. Mleczko
+34760                   Tara Mounsey
+34762               Vicki Movsessian
+34763                Angela Ruggiero
+34767               Jenny Schmidgall
+34771                  Sarah Tueting
+34773                 Gretchen Ulion
+34774                   Sandra Whyte
+47170                    Gigi Marvin
+47181                  Hilary Knight
+47215    Jocelyne Lamoureux-Davidson
+47239                  Kacey Bellamy
+47314                  Meghan Duggan
+47337              Monique Lamoureux
+53474                  Kendall Coyne
+53477                 Brianna Decker
+53481                  Amanda Kessel
+53487                  Lee Stecklein
+58164                   Cayla Barnes
+58166                  Hannah Brandt
+58168                Dani Cameranesi
+58170                  Kali Flanagan
+58171                 Nicole Hensley
+58173                   Megan Keller
+58175                   Sidney Morin
+58176                   Kelly Pannek
+58178                  Amanda Pelkey
+58179                  Emily Pfalzer
+58180                  Maddie Rooney
+58182                  Haley Skarupa
+Name: as, dtype: str</code></pre>
+</div>
+</div>
+<p><img src="img/gold_biting.jpg" class="img-fluid" width="400"></p>
+</section>
+<section id="u.s.-womens-hockey-players-that-won-gold-individual-bios" class="level4">
+<h4 class="anchored" data-anchor-id="u.s.-womens-hockey-players-that-won-gold-individual-bios"><strong>U.S. women’s hockey players that won gold individual bios:</strong></h4>
+<div id="a8968563-a0bc-4700-830f-f5f580aaeeba" class="cell" data-execution_count="38">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>US_bios <span class="op">=</span> athletes_df[athletes_df[<span class="st">"name"</span>].isin(US_players)]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="c5f45734-6758-41f2-b4d1-0639f5ad47e4" class="cell" data-execution_count="39">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>US_bios</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="39">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">athlete_id</th>
+<th data-quarto-table-cell-role="th">name</th>
+<th data-quarto-table-cell-role="th">born_date</th>
+<th data-quarto-table-cell-role="th">born_city</th>
+<th data-quarto-table-cell-role="th">born_region</th>
+<th data-quarto-table-cell-role="th">born_country</th>
+<th data-quarto-table-cell-role="th">NOC</th>
+<th data-quarto-table-cell-role="th">height_cm</th>
+<th data-quarto-table-cell-role="th">weight_kg</th>
+<th data-quarto-table-cell-role="th">died_date</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">99653</th>
+<td>100452</td>
+<td>Chris Bailey</td>
+<td>1972-02-05</td>
+<td>Marietta</td>
+<td>New York</td>
+<td>USA</td>
+<td>United States</td>
+<td>167.0</td>
+<td>73.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">99654</th>
+<td>100453</td>
+<td>Laurie Baker</td>
+<td>1976-11-06</td>
+<td>Concord</td>
+<td>Massachusetts</td>
+<td>USA</td>
+<td>United States</td>
+<td>170.0</td>
+<td>61.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">99655</th>
+<td>100454</td>
+<td>Alana Blahoski</td>
+<td>1974-04-29</td>
+<td>Saint Paul</td>
+<td>Minnesota</td>
+<td>USA</td>
+<td>United States</td>
+<td>170.0</td>
+<td>57.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">99656</th>
+<td>100455</td>
+<td>Lisa Brown-Miller</td>
+<td>1966-11-16</td>
+<td>Union Lake</td>
+<td>Michigan</td>
+<td>USA</td>
+<td>United States</td>
+<td>155.0</td>
+<td>57.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">99657</th>
+<td>100456</td>
+<td>Karyn Bye</td>
+<td>1971-05-18</td>
+<td>River Falls</td>
+<td>Wisconsin</td>
+<td>USA</td>
+<td>United States</td>
+<td>173.0</td>
+<td>75.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">99658</th>
+<td>100457</td>
+<td>Colleen Coyne</td>
+<td>1971-09-19</td>
+<td>Medford</td>
+<td>Massachusetts</td>
+<td>USA</td>
+<td>United States</td>
+<td>160.0</td>
+<td>59.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">99659</th>
+<td>100458</td>
+<td>Sara DeCosta</td>
+<td>1977-05-13</td>
+<td>Warwick</td>
+<td>Rhode Island</td>
+<td>USA</td>
+<td>United States</td>
+<td>178.0</td>
+<td>59.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">99661</th>
+<td>100460</td>
+<td>Cammi Granato</td>
+<td>1971-03-25</td>
+<td>Downers Grove</td>
+<td>Illinois</td>
+<td>USA</td>
+<td>United States</td>
+<td>170.0</td>
+<td>64.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">99662</th>
+<td>100461</td>
+<td>Katie King</td>
+<td>1975-05-24</td>
+<td>Salem</td>
+<td>New Hampshire</td>
+<td>USA</td>
+<td>United States</td>
+<td>175.0</td>
+<td>77.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">99663</th>
+<td>100462</td>
+<td>Shelley Looney</td>
+<td>1972-01-21</td>
+<td>Brownstown Township</td>
+<td>Michigan</td>
+<td>USA</td>
+<td>United States</td>
+<td>165.0</td>
+<td>64.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">99664</th>
+<td>100463</td>
+<td>Sue Merz</td>
+<td>1972-04-10</td>
+<td>Greenwich</td>
+<td>Connecticut</td>
+<td>USA</td>
+<td>United States</td>
+<td>165.0</td>
+<td>66.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">99665</th>
+<td>100464</td>
+<td>A. J. Mleczko</td>
+<td>1975-06-14</td>
+<td>Nantucket</td>
+<td>Massachusetts</td>
+<td>USA</td>
+<td>United States</td>
+<td>180.0</td>
+<td>73.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">99666</th>
+<td>100465</td>
+<td>Tara Mounsey</td>
+<td>1978-03-12</td>
+<td>Concord</td>
+<td>New Hampshire</td>
+<td>USA</td>
+<td>United States</td>
+<td>167.0</td>
+<td>68.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">99667</th>
+<td>100466</td>
+<td>Vicki Movsessian</td>
+<td>1972-11-06</td>
+<td>Concord</td>
+<td>Massachusetts</td>
+<td>USA</td>
+<td>United States</td>
+<td>165.0</td>
+<td>64.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">99668</th>
+<td>100467</td>
+<td>Angela Ruggiero</td>
+<td>1980-01-03</td>
+<td>Panorama City</td>
+<td>California</td>
+<td>USA</td>
+<td>United States</td>
+<td>175.0</td>
+<td>86.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">99670</th>
+<td>100469</td>
+<td>Sarah Tueting</td>
+<td>1976-04-26</td>
+<td>Winnetka</td>
+<td>Illinois</td>
+<td>USA</td>
+<td>United States</td>
+<td>170.0</td>
+<td>64.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">99671</th>
+<td>100470</td>
+<td>Gretchen Ulion</td>
+<td>1972-05-04</td>
+<td>Marlborough</td>
+<td>Connecticut</td>
+<td>USA</td>
+<td>United States</td>
+<td>157.0</td>
+<td>59.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">99672</th>
+<td>100471</td>
+<td>Sandra Whyte</td>
+<td>1970-08-24</td>
+<td>Saugus</td>
+<td>Massachusetts</td>
+<td>USA</td>
+<td>United States</td>
+<td>170.0</td>
+<td>59.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">117688</th>
+<td>119209</td>
+<td>Gigi Marvin</td>
+<td>1987-03-07</td>
+<td>Bemidji</td>
+<td>Minnesota</td>
+<td>USA</td>
+<td>United States</td>
+<td>173.0</td>
+<td>73.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">117693</th>
+<td>119215</td>
+<td>Hilary Knight</td>
+<td>1989-07-12</td>
+<td>Palo Alto</td>
+<td>California</td>
+<td>USA</td>
+<td>United States</td>
+<td>180.0</td>
+<td>79.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">117715</th>
+<td>119240</td>
+<td>Jocelyne Lamoureux-Davidson</td>
+<td>1989-07-03</td>
+<td>Grand Forks</td>
+<td>North Dakota</td>
+<td>USA</td>
+<td>United States</td>
+<td>168.0</td>
+<td>70.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">117728</th>
+<td>119253</td>
+<td>Kacey Bellamy</td>
+<td>1987-04-22</td>
+<td>Providence</td>
+<td>Rhode Island</td>
+<td>USA</td>
+<td>United States</td>
+<td>170.0</td>
+<td>66.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">117772</th>
+<td>119301</td>
+<td>Meghan Duggan</td>
+<td>1987-09-03</td>
+<td>Danvers</td>
+<td>Massachusetts</td>
+<td>USA</td>
+<td>United States</td>
+<td>178.0</td>
+<td>73.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">117785</th>
+<td>119318</td>
+<td>Monique Lamoureux</td>
+<td>1989-07-03</td>
+<td>Grand Forks</td>
+<td>North Dakota</td>
+<td>USA</td>
+<td>United States</td>
+<td>168.0</td>
+<td>70.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">126379</th>
+<td>128731</td>
+<td>Brianna Decker</td>
+<td>1991-05-13</td>
+<td>Dousman</td>
+<td>Wisconsin</td>
+<td>USA</td>
+<td>United States</td>
+<td>163.0</td>
+<td>67.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">126381</th>
+<td>128733</td>
+<td>Amanda Kessel</td>
+<td>1991-08-28</td>
+<td>Madison</td>
+<td>Wisconsin</td>
+<td>USA</td>
+<td>United States</td>
+<td>165.0</td>
+<td>64.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">126385</th>
+<td>128737</td>
+<td>Lee Stecklein</td>
+<td>1994-04-23</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>United States</td>
+<td>183.0</td>
+<td>77.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">135167</th>
+<td>138310</td>
+<td>Cayla Barnes</td>
+<td>1999-01-07</td>
+<td>Eastvale</td>
+<td>California</td>
+<td>USA</td>
+<td>United States</td>
+<td>155.0</td>
+<td>66.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">135168</th>
+<td>138311</td>
+<td>Hannah Brandt</td>
+<td>1993-11-27</td>
+<td>Maplewood</td>
+<td>Minnesota</td>
+<td>USA</td>
+<td>United States</td>
+<td>168.0</td>
+<td>68.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">135169</th>
+<td>138312</td>
+<td>Dani Cameranesi</td>
+<td>1995-06-30</td>
+<td>Minneapolis</td>
+<td>Minnesota</td>
+<td>USA</td>
+<td>United States</td>
+<td>165.0</td>
+<td>67.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">135170</th>
+<td>138313</td>
+<td>Kali Flanagan</td>
+<td>1995-09-19</td>
+<td>Winchester</td>
+<td>Massachusetts</td>
+<td>USA</td>
+<td>United States</td>
+<td>163.0</td>
+<td>64.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">135171</th>
+<td>138314</td>
+<td>Nicole Hensley</td>
+<td>1994-06-23</td>
+<td>Littleton</td>
+<td>Colorado</td>
+<td>USA</td>
+<td>United States</td>
+<td>170.0</td>
+<td>70.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">135172</th>
+<td>138315</td>
+<td>Megan Keller</td>
+<td>1996-05-01</td>
+<td>Farmington</td>
+<td>Michigan</td>
+<td>USA</td>
+<td>United States</td>
+<td>180.0</td>
+<td>73.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">135173</th>
+<td>138316</td>
+<td>Sidney Morin</td>
+<td>1995-06-06</td>
+<td>Edina</td>
+<td>Minnesota</td>
+<td>USA</td>
+<td>United States</td>
+<td>165.0</td>
+<td>58.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">135174</th>
+<td>138317</td>
+<td>Kelly Pannek</td>
+<td>1995-12-29</td>
+<td>Minneapolis</td>
+<td>Minnesota</td>
+<td>USA</td>
+<td>United States</td>
+<td>173.0</td>
+<td>75.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">135175</th>
+<td>138318</td>
+<td>Amanda Pelkey</td>
+<td>1993-05-29</td>
+<td>Randolph</td>
+<td>Vermont</td>
+<td>USA</td>
+<td>United States</td>
+<td>160.0</td>
+<td>61.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">135176</th>
+<td>138319</td>
+<td>Emily Pfalzer</td>
+<td>1993-06-14</td>
+<td>Buffalo</td>
+<td>New York</td>
+<td>USA</td>
+<td>United States</td>
+<td>160.0</td>
+<td>57.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">135177</th>
+<td>138321</td>
+<td>Maddie Rooney</td>
+<td>1997-07-07</td>
+<td>Andover</td>
+<td>Minnesota</td>
+<td>USA</td>
+<td>United States</td>
+<td>165.0</td>
+<td>66.0</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">135178</th>
+<td>138322</td>
+<td>Haley Skarupa</td>
+<td>1994-01-03</td>
+<td>Washington</td>
+<td>District of Columbia</td>
+<td>USA</td>
+<td>United States</td>
+<td>168.0</td>
+<td>64.0</td>
+<td>NaN</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="average-u.s.-womens-hockey-player-height-168.51-cm" class="level2">
+<h2 class="anchored" data-anchor-id="average-u.s.-womens-hockey-player-height-168.51-cm">Average U.S. women’s hockey player height = 168.51 cm</h2>
+<div id="3efa2aae-0cbe-4791-bd21-361a92ea122a" class="cell" data-execution_count="52">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>US_avg_height <span class="op">=</span> US_bios[<span class="st">"height_cm"</span>].mean()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="88d1750f-54ef-4ffd-8a4b-52243595a6ae" class="cell" data-execution_count="53">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>US_avg_height</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="53">
+<pre><code>np.float64(168.51282051282053)</code></pre>
+</div>
+</div>
+<div id="62853c9e-930b-466e-9f29-b4f7a395987f" class="cell" data-execution_count="55">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Average height:"</span>, <span class="bu">round</span>(US_avg_height, <span class="dv">2</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Average height: 168.51</code></pre>
+</div>
+</div>
+</section>
+<section id="average-u.s.-womens-hockey-player-weight-67-kg" class="level2">
+<h2 class="anchored" data-anchor-id="average-u.s.-womens-hockey-player-weight-67-kg">Average U.S. women’s hockey player weight = 67 kg</h2>
+<div id="5c828fd1-3512-4163-97e8-731636d9e9ad" class="cell" data-execution_count="56">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>US_avg_weight <span class="op">=</span> US_bios[<span class="st">"weight_kg"</span>].mean()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="7b36e17a-7ca4-41ff-bcf3-c7dccd1b075d" class="cell" data-execution_count="57">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>US_avg_weight</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="57">
+<pre><code>np.float64(67.0)</code></pre>
+</div>
+</div>
+<div id="bfdd1b62-4451-4f9c-9ec8-f27223426d2f" class="cell" data-execution_count="58">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Average height:"</span>, US_avg_weight)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Average height: 67.0</code></pre>
+</div>
+</div>
+</section>
+<section id="the-number-of-u.s.s-women-hockey-players-of-where-they-were-born" class="level2">
+<h2 class="anchored" data-anchor-id="the-number-of-u.s.s-women-hockey-players-of-where-they-were-born">The number of U.S.’s women hockey players of where they were born</h2>
+<div id="d6cb945c-11d5-47b2-b0f3-99fb10ef3ac9" class="cell" data-execution_count="59">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>US_bios[<span class="st">"born_region"</span>].value_counts()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="59">
+<pre><code>born_region
+Massachusetts           7
+Minnesota               7
+Wisconsin               3
+Michigan                3
+California              3
+New York                2
+Rhode Island            2
+Illinois                2
+New Hampshire           2
+Connecticut             2
+North Dakota            2
+Colorado                1
+Vermont                 1
+District of Columbia    1
+Name: count, dtype: int64</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="results-compiled-analysis" class="level1">
+<h1>Results: Compiled Analysis</h1>
+<p><strong>Ideal Canadian Women’s Hockey Player:</strong> - Height: 170.64 cm - Weight: 69.5 kg - Dominant Provinces: Ontario &amp; Québec</p>
+<p><strong>Ideal U.S. Women’s Hockey Player:</strong> - Height: 168.51 cm - Weight: 67 kg - Dominant States: Massachusetts &amp; Minnesota</p>
+<p><strong>The differences are around 2.1 cm in height and 2.5 kg in weight.</strong></p>
+<p>Dominance and winning cannot generally be attributed to physique alone. Canada has historically dominated the gold medal pool, but it is not like Canadian players are significantly bigger in size than the U.S.. Physical profiles are nearly identical, and sometimes the U.S. captures Gold. So the explanation likely falls elsewhere.</p>
+<p>Based on the regional concentrations, it seemed like most of the players on the rosters were primarily from hockey-heavy regions which might be characteristic that defines an ideal hockey player.</p>
+<p><img src="img/ideal.png" class="img-fluid" width="400"></p>
+<p>From what I gathered from the women’s successful hockey players…</p>
+</section>
+<section id="the-ideal-womens-hockey-player-should-be" class="level1">
+<h1>The ideal women’s hockey player should be…</h1>
+<ul>
+<li>around 169-171 cm tall</li>
+<li>67-70 kg</li>
+<li>From a hockey-heavy region</li>
+</ul>
+<p><img src="img/menshockey.jpg" class="img-fluid" width="600"></p>
+<section id="comparing-to-mens-hockey" class="level2">
+<h2 class="anchored" data-anchor-id="comparing-to-mens-hockey">Comparing to Men’s Hockey</h2>
+<p><strong>I specifically chose Russia and their team as they had an olympic run where they captured gold medals for seven consecutive Olympic Winter Games, which I believed was definite measure of a successful team</strong></p>
+<div id="b7cc9162-7666-450f-92ac-139cf354c471" class="cell" data-execution_count="63">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>mens_hockey <span class="op">=</span> medals_df[(medals_df[<span class="st">"year"</span>] <span class="op">&gt;=</span> <span class="dv">1956</span>) <span class="op">&amp;</span> (medals_df[<span class="st">"year"</span>] <span class="op">&lt;=</span> <span class="dv">1978</span>) <span class="op">&amp;</span> (medals_df[<span class="st">"event"</span>] <span class="op">==</span> <span class="st">"Ice Hockey, Men (Olympic)"</span>) <span class="op">&amp;</span> (medals_df[<span class="st">"medal"</span>] <span class="op">==</span> <span class="st">"Gold"</span>)]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="f2d16049-76d7-4f42-aaa7-59e001d711c7" class="cell" data-execution_count="65">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>Russia_players <span class="op">=</span> mens_hockey[<span class="st">"as"</span>].drop_duplicates()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><img src="img/russia_flag.jpeg" class="img-fluid" width="600"></p>
+<section id="all-of-russias-men-hockey-players-that-won-gold-so-far" class="level4">
+<h4 class="anchored" data-anchor-id="all-of-russias-men-hockey-players-that-won-gold-so-far"><strong>All of Russia’s men hockey players that won gold so far:</strong></h4>
+<div id="7d20da9c-fed9-47eb-a6e3-7d92b7efaadc" class="cell" data-execution_count="81">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>Russia_players</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="81">
+<pre><code>7979        Boris Aleksandrov
+7981     Veniamin Aleksandrov
+8021        Aleksandr Almetov
+8589           Yevgeny Babich
+8591           Sergey Babinov
+                 ...         
+30643           Boris Zaytsev
+30644            Oleg Zaytsev
+30721         Viktor Zhluktov
+30759           Yevgeny Zimin
+30800           Viktor Zinger
+Name: as, Length: 80, dtype: str</code></pre>
+</div>
+</div>
+<div id="466e73eb-71ef-4700-824f-1a0b47c619ad" class="cell" data-execution_count="67">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>Russia_bios <span class="op">=</span> athletes_df[athletes_df[<span class="st">"name"</span>].isin(Russia_players)]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="russia-mens-hockey-players-that-won-gold-individual-bios" class="level4">
+<h4 class="anchored" data-anchor-id="russia-mens-hockey-players-that-won-gold-individual-bios"><strong>Russia men’s hockey players that won gold individual bios:</strong></h4>
+<div id="43f5e0d6-7b5e-4ad9-8c5e-a6ba9bcfd062" class="cell" data-execution_count="68">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>Russia_bios</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="68">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">athlete_id</th>
+<th data-quarto-table-cell-role="th">name</th>
+<th data-quarto-table-cell-role="th">born_date</th>
+<th data-quarto-table-cell-role="th">born_city</th>
+<th data-quarto-table-cell-role="th">born_region</th>
+<th data-quarto-table-cell-role="th">born_country</th>
+<th data-quarto-table-cell-role="th">NOC</th>
+<th data-quarto-table-cell-role="th">height_cm</th>
+<th data-quarto-table-cell-role="th">weight_kg</th>
+<th data-quarto-table-cell-role="th">died_date</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">20172</th>
+<td>20315</td>
+<td>Aleksandr Gusev</td>
+<td>1955-02-21</td>
+<td>Sredneuralsk</td>
+<td>Sverdlovsk</td>
+<td>RUS</td>
+<td>Soviet Union</td>
+<td>173.0</td>
+<td>74.0</td>
+<td>1994-01-01</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">40026</th>
+<td>40334</td>
+<td>Vladimir Petrov</td>
+<td>1932-04-27</td>
+<td>Moskva (Moscow)</td>
+<td>Moskva</td>
+<td>RUS</td>
+<td>Soviet Union</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">82871</th>
+<td>83528</td>
+<td>Boris Aleksandrov</td>
+<td>1955-11-13</td>
+<td>Oskemen</td>
+<td>Shyrgys Qazaqstan</td>
+<td>KAZ</td>
+<td>Kazakhstan Soviet Union</td>
+<td>168.0</td>
+<td>69.0</td>
+<td>2002-07-31</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">82872</th>
+<td>83529</td>
+<td>Veniamin Aleksandrov</td>
+<td>1937-04-18</td>
+<td>Moskva (Moscow)</td>
+<td>Moskva</td>
+<td>RUS</td>
+<td>Soviet Union</td>
+<td>180.0</td>
+<td>81.0</td>
+<td>1991-11-06</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">82896</th>
+<td>83554</td>
+<td>Aleksandr Almetov</td>
+<td>1940-01-18</td>
+<td>Kyiv</td>
+<td>Kyiv</td>
+<td>UKR</td>
+<td>Soviet Union</td>
+<td>178.0</td>
+<td>83.0</td>
+<td>1992-09-21</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">98391</th>
+<td>99187</td>
+<td>Boris Zaytsev</td>
+<td>1937-03-23</td>
+<td>Moskva (Moscow)</td>
+<td>Moskva</td>
+<td>RUS</td>
+<td>Soviet Union</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>2000-02-24</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">98392</th>
+<td>99188</td>
+<td>Oleg Zaytsev</td>
+<td>1939-08-04</td>
+<td>Moskva (Moscow)</td>
+<td>Moskva</td>
+<td>RUS</td>
+<td>Soviet Union</td>
+<td>179.0</td>
+<td>85.0</td>
+<td>1993-03-01</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">98426</th>
+<td>99222</td>
+<td>Viktor Zhluktov</td>
+<td>1954-01-26</td>
+<td>Inta</td>
+<td>Respublika Komi</td>
+<td>RUS</td>
+<td>Soviet Union</td>
+<td>190.0</td>
+<td>89.0</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">98441</th>
+<td>99237</td>
+<td>Yevgeny Zimin</td>
+<td>1947-08-06</td>
+<td>Moskva (Moscow)</td>
+<td>Moskva</td>
+<td>RUS</td>
+<td>Soviet Union</td>
+<td>173.0</td>
+<td>82.0</td>
+<td>2018-12-28</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">98451</th>
+<td>99247</td>
+<td>Viktor Zinger</td>
+<td>1941-10-29</td>
+<td>Davydovo</td>
+<td>Ryazan</td>
+<td>RUS</td>
+<td>Soviet Union</td>
+<td>172.0</td>
+<td>70.0</td>
+<td>2013-09-24</td>
+</tr>
+</tbody>
+</table>
+
+<p>83 rows × 10 columns</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="average-russia-mens-hockey-player-height-178.58-cm" class="level2">
+<h2 class="anchored" data-anchor-id="average-russia-mens-hockey-player-height-178.58-cm">Average Russia men’s hockey player height = 178.58 cm</h2>
+<div id="846e1eed-13a7-460a-bedc-30ad5d5aa645" class="cell" data-execution_count="70">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>Russia_avg_height <span class="op">=</span> Russia_bios[<span class="st">"height_cm"</span>].mean()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="f3cec5ac-07b7-45b5-8b7a-57da698b81d5" class="cell" data-execution_count="71">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>Russia_avg_height</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="71">
+<pre><code>np.float64(178.57894736842104)</code></pre>
+</div>
+</div>
+<div id="5ffa93e1-9629-4574-926e-cfb132a862e4" class="cell" data-execution_count="72">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Average height:"</span>, <span class="bu">round</span>(Russia_avg_height, <span class="dv">2</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Average height: 178.58</code></pre>
+</div>
+</div>
+</section>
+<section id="average-russia-mens-hockey-player-weight-80-kg" class="level2">
+<h2 class="anchored" data-anchor-id="average-russia-mens-hockey-player-weight-80-kg">Average Russia men’s hockey player weight = 80 kg</h2>
+<div id="9a21c5df-10ec-443a-8cdb-5091fadd83a2" class="cell" data-execution_count="73">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>Russia_avg_weight <span class="op">=</span> Russia_bios[<span class="st">"weight_kg"</span>].mean()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="08d5a77c-b5b6-439f-be35-b7e782820145" class="cell" data-execution_count="74">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>Russia_avg_weight</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="74">
+<pre><code>np.float64(80.27397260273973)</code></pre>
+</div>
+</div>
+<div id="cea33f49-ea5d-492f-a424-88233d1d8839" class="cell" data-execution_count="75">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Average height:"</span>, Russia_avg_weight)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Average height: 80.27397260273973</code></pre>
+</div>
+</div>
+</section>
+<section id="the-number-of-russia-mens-hockey-players-of-where-they-were-born" class="level2">
+<h2 class="anchored" data-anchor-id="the-number-of-russia-mens-hockey-players-of-where-they-were-born">The number of Russia men’s hockey players of where they were born</h2>
+<div id="5cfe84eb-0e35-4649-88f7-efc5afb42b34" class="cell" data-execution_count="76">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>Russia_bios[<span class="st">"born_region"</span>].value_counts()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="76">
+<pre><code>born_region
+Moskva                  35
+Minnesota                6
+Moskva Oblast            6
+Massachusetts            6
+Nizhny Novgorod          3
+Respublika Komi          2
+Tula                     2
+Ryazan                   2
+Respublika Mordoviya     2
+Michigan                 2
+Tambov                   1
+Omsk                     1
+Sverdlovsk               1
+Shyrgys Qazaqstan        1
+Chelyabinsk              1
+Kyiv                     1
+Connecticut              1
+Kirov                    1
+Novosibirsk              1
+Indiana                  1
+Penza                    1
+Krasnodar Kray           1
+Smolensk                 1
+Khabarovsk Kray          1
+Name: count, dtype: int64</code></pre>
+</div>
+</div>
+<p><img src="img/ideal_hockey.jpg" class="img-fluid" width="400"></p>
+</section>
+</section>
+<section id="the-ideal-russian-mens-hockey-player-should-be" class="level1">
+<h1>The ideal Russian men’s hockey player should be…</h1>
+<ul>
+<li>Height: 178.58 cm<br>
+</li>
+<li>Weight: 80 kg</li>
+<li>Dominant region: Moskva</li>
+</ul>
+<p>Obviously, it would be difficult to compare height and weight of men’s hockey player to a women’s. But one consistent attribute I see all around between both the men and women seem to be that most winning hockey players are born in hockey-heavy regions where hockey is the culture and main sport.</p>
+</section>
+<section id="conclusion" class="level1">
+<h1>CONCLUSION:</h1>
+<ul>
+<li><strong>The data does not point to a definitive answer of an ideal hockey player. However, it does reveal a consistent pattern: a significant number of Olympic athletes were born in hockey-heavy regions. For Canada, it was Ontario and Quebec. While in the United States, Massachusetts and Minnesota. And for Russia, Moskva. This might suggest that although a competitive athlete has to fit a certain physical frame, winning Gold may be less dependent on individual physical variations and more about having accessibility to strong developmental programs, competitive youth leagues, and just the culture in general growing up. Maybe accessibility and the system set as a youth hockey player is the most important? A next step in this analysis would be to examine the average age of Olympic players at the time of competition.</strong></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/emch06\.github\.io\/comm3180_S26_Blog\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
