@@ -1,47 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://emch06.github.io/comm3180_S26_Blog/about.html</loc>
-    <lastmod>2026-03-24T02:23:28.365Z</lastmod>
-  </url>
-  <url>
-    <loc>https://emch06.github.io/comm3180_S26_Blog/posts/000_test_post/index.html</loc>
-    <lastmod>2026-03-24T02:23:28.372Z</lastmod>
-  </url>
-  <url>
-    <loc>https://emch06.github.io/comm3180_S26_Blog/posts/003_DOW3_Olympics/003_DOW3.html</loc>
-    <lastmod>2026-03-24T02:23:28.750Z</lastmod>
-  </url>
-  <url>
-    <loc>https://emch06.github.io/comm3180_S26_Blog/posts/003_DOW2_Analysis /DOW2.html</loc>
-    <lastmod>2026-03-24T02:23:28.374Z</lastmod>
-  </url>
-  <url>
-    <loc>https://emch06.github.io/comm3180_S26_Blog/posts/002_task_1/task_1.html</loc>
-    <lastmod>2026-03-24T02:23:28.374Z</lastmod>
-  </url>
-  <url>
     <loc>https://emch06.github.io/comm3180_S26_Blog/index.html</loc>
-    <lastmod>2026-03-24T02:23:28.365Z</lastmod>
-  </url>
-  <url>
-    <loc>https://emch06.github.io/comm3180_S26_Blog/posts/002_task_1/Untitled.html</loc>
-    <lastmod>2026-03-24T02:23:28.373Z</lastmod>
-  </url>
-  <url>
-    <loc>https://emch06.github.io/comm3180_S26_Blog/posts/004_DOW4/004_DOW4.html</loc>
-    <lastmod>2026-03-24T02:23:28.900Z</lastmod>
-  </url>
-  <url>
-    <loc>https://emch06.github.io/comm3180_S26_Blog/posts/005_DOW5/005_DOW5.html</loc>
-    <lastmod>2026-03-24T02:23:28.910Z</lastmod>
-  </url>
-  <url>
-    <loc>https://emch06.github.io/comm3180_S26_Blog/posts/003_DOW3_Olympics/Untitled.html</loc>
-    <lastmod>2026-03-24T02:23:28.750Z</lastmod>
+    <lastmod>2026-05-09T05:45:45.442Z</lastmod>
   </url>
   <url>
     <loc>https://emch06.github.io/comm3180_S26_Blog/posts/001_DOW1_Weather/DOW1.html</loc>
-    <lastmod>2026-03-24T02:23:28.372Z</lastmod>
+    <lastmod>2026-05-09T05:45:45.447Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emch06.github.io/comm3180_S26_Blog/posts/005_DOW5/005_DOW5.html</loc>
+    <lastmod>2026-05-09T05:45:45.957Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emch06.github.io/comm3180_S26_Blog/posts/003_DOW2_Analysis /DOW2.html</loc>
+    <lastmod>2026-05-09T05:45:45.454Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emch06.github.io/comm3180_S26_Blog/posts/002_task_1/task_1.html</loc>
+    <lastmod>2026-05-09T05:45:45.454Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emch06.github.io/comm3180_S26_Blog/posts/003_DOW3_Olympics/003_DOW3.html</loc>
+    <lastmod>2026-05-09T05:45:45.810Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emch06.github.io/comm3180_S26_Blog/posts/003_DOW3_Olympics/Untitled.html</loc>
+    <lastmod>2026-05-09T05:45:45.812Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emch06.github.io/comm3180_S26_Blog/posts/002_task_1/Untitled.html</loc>
+    <lastmod>2026-05-09T05:45:45.452Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emch06.github.io/comm3180_S26_Blog/posts/004_DOW4/004_DOW4.html</loc>
+    <lastmod>2026-05-09T05:45:45.951Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emch06.github.io/comm3180_S26_Blog/posts/000_test_post/index.html</loc>
+    <lastmod>2026-05-09T05:45:45.447Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emch06.github.io/comm3180_S26_Blog/posts/006_DOW6/006_DOW6.html</loc>
+    <lastmod>2026-05-09T05:45:46.015Z</lastmod>
+  </url>
+  <url>
+    <loc>https://emch06.github.io/comm3180_S26_Blog/about.html</loc>
+    <lastmod>2026-05-09T05:45:45.442Z</lastmod>
   </url>
 </urlset>

@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.36">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Emilie">
 <meta name="dcterms.date" content="2026-01-28">
 
-<title>Dataset of the Week #1: The Weather in Philadelphia – My Data Stories</title>
+<title>DOW 1: The Weather in Philadelphia – My Data Stories</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -76,10 +76,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-cc75b09f5250c27d17e89c6d0d56fedc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-244ce1b9ec229af56bb6f90d24b3371d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -152,7 +152,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Dataset of the Week #1: The Weather in Philadelphia</h1>
+      <h1 class="title">DOW 1: The Weather in Philadelphia</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">DOW</div>
                 <div class="quarto-category">Weather</div>
@@ -192,30 +192,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="my-post" class="level3">
-<h3 class="anchored" data-anchor-id="my-post">My post</h3>
-<div id="bdf7c7cd-26d3-4124-9d4b-3be4e1af97a7" class="cell" data-execution_count="1">
+<section id="the-weather-in-philadelphia" class="level1">
+<h1>The weather in Philadelphia</h1>
+<p><img src="images/philadelphia.jpg" class="img-fluid" width="500"></p>
+<div id="bdf7c7cd-26d3-4124-9d4b-3be4e1af97a7" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="f700b449-257b-4ec7-86c1-4d4c2bedb8db" class="cell" data-execution_count="2">
+<div id="f700b449-257b-4ec7-86c1-4d4c2bedb8db" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>weather_df <span class="op">=</span> pd.read_csv(<span class="st">'data/philadelphia_weather_2005_to_2025.csv'</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>weather_df <span class="op">=</span> weather_df.assign(date<span class="op">=</span>pd.to_datetime(weather_df[<span class="st">'date'</span>]))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<section id="inspect-the-data" class="level4">
-<h4 class="anchored" data-anchor-id="inspect-the-data">Inspect the data</h4>
-<div id="85429aeb-bd71-41a7-88a9-2e971d9b1d7a" class="cell" data-execution_count="3">
+<section id="inspecting-the-data" class="level4">
+<h4 class="anchored" data-anchor-id="inspecting-the-data">Inspecting the data</h4>
+<div id="85429aeb-bd71-41a7-88a9-2e971d9b1d7a" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>weather_df.columns</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="3">
+<div class="cell-output cell-output-display" data-execution_count="5">
 <pre><code>Index(['day', 'year', 'high', 'low', 'rain', 'snow', 'date', 'day_num',
        'month_num', 'dow', 'dow_name', 'month'],
       dtype='str')</code></pre>
 </div>
 </div>
-<div id="04c48151-3d94-4578-90b6-613872647bcf" class="cell" data-execution_count="4">
+<div id="04c48151-3d94-4578-90b6-613872647bcf" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>weather_df.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="4">
+<div class="cell-output cell-output-display" data-execution_count="6">
 <div>
 
 
@@ -319,9 +320,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div id="a86bc930-d5ed-429e-b9ed-c78d2a4faa00" class="cell" data-execution_count="5">
+<div id="a86bc930-d5ed-429e-b9ed-c78d2a4faa00" class="cell" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>weather_df[<span class="st">'year'</span>].value_counts()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="5">
+<div class="cell-output cell-output-display" data-execution_count="7">
 <pre><code>year
 2008    366
 2020    366
@@ -348,10 +349,10 @@ Name: count, dtype: int64</code></pre>
 </div>
 </div>
 </section>
-</section>
 <section id="what-was-the-weather-like-in-philadelphia-the-day-of-my-birthday-01-30-for-each-year-since-2006-2025" class="level2">
 <h2 class="anchored" data-anchor-id="what-was-the-weather-like-in-philadelphia-the-day-of-my-birthday-01-30-for-each-year-since-2006-2025">1) What was the weather like in Philadelphia the day of my birthday (01-30) for each year since 2006-2025?</h2>
 <p>## * a. What was the average fahrenheit for the day? ## * b. Did it rain? ## * c.&nbsp;Did it snow? ## * d.&nbsp;What day of the week was it?</p>
+<p><strong>All information for each of my birthdays (most important include the temperatures of high, low, rain, and snow). High represents the highest temperatures of the day. Low represents the lowest temperature. Rain and Snow include decimals representing the amount of snow or rain, that can be converted into a percentage.</strong></p>
 <div id="d88a8140-ac0f-4678-85ca-bcdb48ae8294" class="cell" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>weather_df.query(<span class="st">'day =="January 30"'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="8">
@@ -698,6 +699,7 @@ Name: count, dtype: int64</code></pre>
 </div>
 </div>
 </div>
+<p><img src="images/temp.png" class="img-fluid" width="400"></p>
 </section>
 <section id="a-what-was-the-average-fahrenheit-for-the-day" class="level2">
 <h2 class="anchored" data-anchor-id="a-what-was-the-average-fahrenheit-for-the-day">A) What was the average fahrenheit for the day?</h2>
@@ -1074,17 +1076,19 @@ Name: count, dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<div id="fad39775-51f9-4680-b52c-bf9bc155d114" class="cell" data-execution_count="12">
+<div id="fad39775-51f9-4680-b52c-bf9bc155d114" class="cell" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>birthday_mean_temp <span class="op">=</span> temp_avg.mean()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="4aad17dc-9dc6-4b43-a58a-0bde977f1fa7" class="cell" data-execution_count="13">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>birthday_mean_temp</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="13">
-<pre><code>np.float64(32.30952380952381)</code></pre>
+<div id="4aad17dc-9dc6-4b43-a58a-0bde977f1fa7" class="cell" data-execution_count="12">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Average birthday temperature:"</span>, <span class="bu">round</span>(birthday_mean_temp, <span class="dv">1</span>), <span class="st">"degrees"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Average birthday temperature: 32.3 degrees</code></pre>
 </div>
 </div>
 <section id="since-i-was-born-in-2006-combining-the-weather-data-of-philadelphia-for-the-past-twenty-years-the-average-fahrenheit-on-my-birthday-in-philadelphia-is-32.3-degrees." class="level4">
 <h4 class="anchored" data-anchor-id="since-i-was-born-in-2006-combining-the-weather-data-of-philadelphia-for-the-past-twenty-years-the-average-fahrenheit-on-my-birthday-in-philadelphia-is-32.3-degrees.">Since I was born in 2006, combining the weather data of Philadelphia for the past twenty years, the average fahrenheit on my birthday in Philadelphia is 32.3 degrees.</h4>
+<p>Looking at the weather on my birthday from 2006 to 2025 showed that January 30 in Philadelphia is usually cold. The average temperature across all years was about 32 degrees Fahrenheit. While some birthdays were especially cold, others were surprisingly mild, showing that winter weather on my birthday has varied more than I expected.</p>
+<p><img src="images/rain.jpg" class="img-fluid" width="400"></p>
 </section>
 </section>
 <section id="b-did-it-rain" class="level2">
@@ -1121,41 +1125,46 @@ Name: rain, dtype: bool</code></pre>
 </div>
 </div>
 <div id="df4cabfa-78d9-4c8f-8d4b-80e5f805ac7e" class="cell" data-execution_count="16">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>is_rain.value_counts()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="16">
-<pre><code>rain
-False    13
-True      8
-Name: count, dtype: int64</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>rain_counts <span class="op">=</span> is_rain.value_counts()</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>rain_yes <span class="op">=</span> rain_counts[<span class="va">True</span>]</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>rain_no <span class="op">=</span> rain_counts[<span class="va">False</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="20b03428-4f8d-4cfa-a328-70f3e617c199" class="cell" data-execution_count="17">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Out of 21 birthdays analyzed, it rained on </span><span class="sc">{</span>rain_yes<span class="sc">}</span><span class="ss"> birthdays and did not rain on </span><span class="sc">{</span>rain_no<span class="sc">}</span><span class="ss"> birthdays."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Out of 21 birthdays analyzed, it rained on 8 birthdays and did not rain on 13 birthdays.</code></pre>
 </div>
 </div>
-<section id="since-i-was-born-in-2006-majority-of-the-years-since-i-was-alive-on-the-day-of-my-birthday-in-philadelphia-it-did-not-rain.-13-years-it-did-not-and-7-years-it-did." class="level4">
-<h4 class="anchored" data-anchor-id="since-i-was-born-in-2006-majority-of-the-years-since-i-was-alive-on-the-day-of-my-birthday-in-philadelphia-it-did-not-rain.-13-years-it-did-not-and-7-years-it-did.">Since I was born in 2006, majority of the years since I was alive on the day of my birthday in Philadelphia it did not rain. (13 years it did not and 7 years it did).</h4>
-</section>
+<p><strong>Out of 21 birthdays analyzed, it rained on 8 birthdays and did not rain on 13 birthdays.</strong></p>
+<p>Most of my birthdays in Philadelphia did not have rain. Out of the years analyzed, only around 60% recorded rainfall on January 30. Even though winter is often associated with gloomy weather, the data showed that rainy birthdays were actually less common for me.</p>
+<p><img src="images/snow.jpeg" class="img-fluid" width="400"></p>
 </section>
 <section id="c-did-it-snow" class="level2">
 <h2 class="anchored" data-anchor-id="c-did-it-snow">C) Did it snow?</h2>
-<div id="65952e32-0544-42af-bdf3-8578f7566065" class="cell" data-execution_count="19">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>birthday <span class="op">=</span> weather_df.query(<span class="st">'day == "January 30"'</span>) </span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>is_snow <span class="op">=</span> birthday[<span class="st">'snow'</span>]<span class="op">&gt;</span><span class="dv">0</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="65952e32-0544-42af-bdf3-8578f7566065" class="cell" data-execution_count="23">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>birthday <span class="op">=</span> weather_df.query(<span class="st">'day == "January 30"'</span>) </span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>is_snow <span class="op">=</span> birthday[<span class="st">'snow'</span>]<span class="op">&gt;</span><span class="dv">0</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="57aa510f-e6f7-4cb6-9566-3d9fb06cfeba" class="cell" data-execution_count="20">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>is_snow.value_counts()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="20">
-<pre><code>snow
-False    14
-True      7
-Name: count, dtype: int64</code></pre>
+<div id="57aa510f-e6f7-4cb6-9566-3d9fb06cfeba" class="cell" data-execution_count="24">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>snow_counts <span class="op">=</span> is_snow.value_counts()</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>snow_yes <span class="op">=</span> snow_counts[<span class="va">True</span>]</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>snow_no <span class="op">=</span> snow_counts[<span class="va">False</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="6f707052-d95e-4af4-aec0-6bb4165a0a03" class="cell" data-execution_count="25">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Out of 21 birthdays analyzed, it snowed on </span><span class="sc">{</span>snow_yes<span class="sc">}</span><span class="ss"> birthdays and did not snow on </span><span class="sc">{</span>snow_no<span class="sc">}</span><span class="ss"> birthdays."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Out of 21 birthdays analyzed, it snowed on 7 birthdays and did not snow on 14 birthdays.</code></pre>
 </div>
 </div>
-<section id="since-i-was-born-in-2006-majority-of-the-years-since-i-was-alive-on-the-day-of-my-birthday-in-philadelphia-it-did-not-snow.-14-years-it-did-not-and-6-years-it-did." class="level4">
-<h4 class="anchored" data-anchor-id="since-i-was-born-in-2006-majority-of-the-years-since-i-was-alive-on-the-day-of-my-birthday-in-philadelphia-it-did-not-snow.-14-years-it-did-not-and-6-years-it-did.">Since I was born in 2006, majority of the years since I was alive on the day of my birthday in Philadelphia it did not snow. (14 years it did not and 6 years it did).</h4>
-</section>
+<p><strong>Out of 21 birthdays analyzed, it snowed on 7 birthdays and did nto snow 14 birthdays.</strong></p>
+<p>Snowfall was also less common than I originally thought. Most birthdays did not have measurable snowfall, even though January is one of the coldest months of the year.</p>
 </section>
 <section id="d-what-day-of-the-week-was-it" class="level2">
 <h2 class="anchored" data-anchor-id="d-what-day-of-the-week-was-it">D) What day of the week was it?</h2>
 <div id="d68cf83e-c29d-4801-ab90-4f5a31508743" class="cell" data-execution_count="22">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>weather_df.query(<span class="st">'day == "January 30"'</span>) [<span class="st">'dow_name'</span>].value_counts()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>weather_df.query(<span class="st">'day == "January 30"'</span>) [<span class="st">'dow_name'</span>].value_counts()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="22">
 <pre><code>dow_name
 Monday       4
@@ -1170,13 +1179,16 @@ Name: count, dtype: int64</code></pre>
 </div>
 <section id="since-i-was-born-in-2006-the-largest-amount-of-my-birthdays-have-fallen-on-a-monday." class="level4">
 <h4 class="anchored" data-anchor-id="since-i-was-born-in-2006-the-largest-amount-of-my-birthdays-have-fallen-on-a-monday.">Since I was born in 2006, the largest amount of my birthdays have fallen on a Monday.</h4>
+<p>Mondays appeared more than any other weekday for my birthdays. This was interesting because weekday birthdays often feel less celebratory (and more like going to school) compared to birthdays that fall on weekends.</p>
+<p><img src="images/conclusion.jpg" class="img-fluid" width="400"></p>
 </section>
 </section>
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>The weather in Philadelphia on the days of my birthday for the past twenty years was something I was curious about, especially to see if there was a pattern that I can relate back to myself. I found that majority of my birthdays fell on a Monday, it did snow nor rain for most of the years, and the avgerage temperature was 32 degrees on my birthdays put together. So overall, most of my birthdays throughout the years here in Philadelphia were not extremely cold, but still on the chillier side. I find that interesting, because I spent my recent birthday in 2026 freezing, because of how cold it was from the piled up snow from the previous snow storm and high winds. I thought this was the norm weather here in Philadelphia on Jan 30, but referencing past years’ data it shows otherwise. This was an interesting finding.</p>
+<p>The weather in Philadelphia on the days of my birthday for the past twenty years was something I was curious about, especially to see if there was a pattern that I can relate back to myself. I found that majority of my birthdays fell on a Monday, it did snow nor rain for most of the years, and the average temperature was 32 degrees on my birthdays put together. So overall, most of my birthdays throughout the years here in Philadelphia were usually cold, but not extremely snowy or stormy. I find that interesting, because I spent my recent birthday in 2026 freezing, because of how cold it was from the piled up snow from the previous snow storm and high winds. I thought this was the norm weather here in Philadelphia on Jan 30, but referencing past years’ data it shows otherwise. The weather patterns on my birthday were more varied than I expected.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
