@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "My Data Stories",
     "section": "",
-    "text": "DOW 6: Looking into the recent trend of Matcha Lattes\n\n\n\nDOW\n\nGoogle Search Trends\n\nMatcha\n\nStarbucks\n\n\n\n\n\n\n\n\n\nApr 1, 2026\n\n\nEmilie\n\n\n\n\n\n\n\n\n\n\n\n\nDOW 5: Do shooting incidents occur near colleges and universities in Philadelphia?\n\n\n\nDOW\n\nShooting Incidents\n\nPhiladelphia Universites/Colleges\n\n\n\n\n\n\n\n\n\nMar 23, 2026\n\n\nEmilie\n\n\n\n\n\n\n\n\n\n\n\n\nDOW 4: How many fatal crashes occur near Philadelphia Schools\n\n\n\nDOW\n\nFatal Crashes\n\nPhiladelphia Schools\n\n\n\n\n\n\n\n\n\nMar 13, 2026\n\n\nEmilie\n\n\n\n\n\n\n\n\n\n\n\n\nWhat makes up an ideal hockey player\n\n\n\nDOW\n\nHockey\n\nOlympics\n\n\n\n\n\n\n\n\n\nFeb 22, 2026\n\n\nEmilie\n\n\n\n\n\n\n\n\n\n\n\n\nIs extroversion related to race\n\n\n\nDOW\n\nExtroversion\n\n\n\n\n\n\n\n\n\nFeb 13, 2026\n\n\nEmilie\n\n\n\n\n\n\n\n\n\n\n\n\nDOW 1: The Weather in Philadelphia\n\n\n\nDOW\n\nWeather\n\n\n\n\n\n\n\n\n\nJan 28, 2026\n\n\nEmilie\n\n\n\n\n\n\n\n\n\n\n\n\nTask #1 in experimenting with website\n\n\n\nLLMs\n\nExperiment\n\n\n\nHow to make a new post appear\n\n\n\n\n\nJan 23, 2026\n\n\nEmilie\n\n\n\n\n\n\n\n\n\n\n\n\nA test post\n\n\n\nvisualization\n\ndata stories\n\ntesting\n\n\n\nAn example post from a Jupyter notebook\n\n\n\n\n\nJan 12, 2026\n\n\nAn LLM User\n\n\n\n\n\nNo matching items"
+    "text": "DOW 6: Looking into the recent trend of Matcha Lattes\n\n\n\nDOW\n\nGoogle Search Trends\n\nMatcha\n\nStarbucks\n\n\n\n\n\n\n\n\n\nApr 1, 2026\n\n\nEmilie\n\n\n\n\n\n\n\n\n\n\n\n\nDOW 5: Do shooting incidents occur near colleges and universities in Philadelphia?\n\n\n\nDOW\n\nShooting Incidents\n\nPhiladelphia Universites/Colleges\n\n\n\n\n\n\n\n\n\nMar 23, 2026\n\n\nEmilie\n\n\n\n\n\n\n\n\n\n\n\n\nDOW 4: How many fatal crashes occur near Philadelphia Schools\n\n\n\nDOW\n\nFatal Crashes\n\nPhiladelphia Schools\n\n\n\n\n\n\n\n\n\nMar 13, 2026\n\n\nEmilie\n\n\n\n\n\n\n\n\n\n\n\n\nWhat makes up an ideal hockey player\n\n\n\nDOW\n\nHockey\n\nOlympics\n\n\n\n\n\n\n\n\n\nFeb 22, 2026\n\n\nEmilie\n\n\n\n\n\n\n\n\n\n\n\n\nIs extroversion related to race\n\n\n\nDOW\n\nExtroversion\n\n\n\n\n\n\n\n\n\nFeb 13, 2026\n\n\nEmilie\n\n\n\n\n\n\n\n\n\n\n\n\nDOW 1: The Weather in Philadelphia\n\n\n\nDOW\n\nWeather\n\n\n\n\n\n\n\n\n\nJan 28, 2026\n\n\nEmilie\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/001_DOW1_Weather/DOW1.html",
@@ -154,13 +154,6 @@
     "text": "Results Raw Data:\nThe number accompanying each race is the average extroversion score (the higher the number, the higher the extroversion level)\n\nrace_avg\n\nrace_cat\nArctic (Siberian, Eskimo)                                   19.214286\nCaucasian (European)                                        15.264591\nCaucasian (Indian)                                          15.922925\nCaucasian (Middle East)                                     15.809709\nCaucasian (North African, Other)                            15.415617\nIndigenous Australian                                       16.208333\nMixed Race                                                  15.488145\nNative American                                             15.706468\nNorth East Asian (Mongol, Tibetan, Korean Japanese, etc)    15.319149\nOther                                                       15.969448\nPacific (Polynesian, Micronesian, etc)                      15.753846\nSouth East Asian (Chinese, Thai, Malay, Filipino, etc)      14.980656\nWest African, Bushmen, Ethiopian                            16.374517\nmissed                                                      15.398693\nName: E_value, dtype: float64"
   },
   {
-    "objectID": "posts/002_task_1/task_1.html",
-    "href": "posts/002_task_1/task_1.html",
-    "title": "Task #1 in experimenting with website",
-    "section": "",
-    "text": "Let’s hope this works out!"
-  },
-  {
     "objectID": "posts/003_DOW3_Olympics/003_DOW3.html",
     "href": "posts/003_DOW3_Olympics/003_DOW3.html",
     "title": "What makes up an ideal hockey player",
@@ -278,20 +271,6 @@
     "title": "DOW 4: How many fatal crashes occur near Philadelphia Schools",
     "section": "Let’s look back to the highest number of fatal crash counts near schools in 2025:",
     "text": "Let’s look back to the highest number of fatal crash counts near schools in 2025:\n\nccnt2025.sort_values('crash_cnt2025', ascending=False).head(60)\n\n\n\n\n\n\n\n\ncrash_cnt2025\n\n\nschool_name\n\n\n\n\n\nWILLARD, FRANCES E. SCHOOL\n7\n\n\nCONWELL, RUSSELL MIDDLE SCHOOL\n6\n\n\nMASTBAUM, JULES E. HIGH SCHOOL\n5\n\n\nELKIN, LEWIS SCHOOL\n4\n\n\nSTUDENT TRANSITION CENTER\n4\n\n\nHESTON, EDWARD SCHOOL\n3\n\n\nMASTERY CHARTER-SHOEMAKER\n3\n\n\nPARKWAY CENTER CITY MIDDLE COLLEGE HIGH SCHOOL\n3\n\n\nPEOPLE FOR PEOPLE\n3\n\n\nHIGH SCHOOL OF THE FUTURE\n3\n\n\nBELMONT ACADEMY CHARTER SCHOOL\n3\n\n\nBARTON SCHOOL\n2\n\n\nFREIRE CHARTER SCHOOL\n2\n\n\nGIRARD ACADEMIC MUSIC PROGRAM\n2\n\n\nGATEWAY TO COLLEGE\n2\n\n\nMASTERY CHARTER @ CLYMER\n2\n\n\nMAYFAIR SCHOOL\n2\n\n\nPHILADELPHIA PERFORMING ARTS CHARTER: STRING THEORY (E. CAMPUS)\n2\n\n\nSCIENCE LEADERSHIP ACADEMY\n2\n\n\nPAN AMERICAN ACADEMY CHARTER\n2\n\n\nPHILADELPHIA VIRTUAL ACADEMY\n2\n\n\nROMAN CATHOLIC HIGH SCHOOL\n2\n\n\nSAINTS TABERNACLE DAY SCHOOL\n2\n\n\nRESURRECTION REGIONAL CATHOLIC SCHOOL\n2\n\n\nREVOLUTION SCHOOL\n2\n\n\nRE-ENGAGEMENT CENTER\n2\n\n\nPREPARATORY CHARTER SCHOOL\n2\n\n\nSAYRE, WILLIAM L. HIGH SCHOOL\n2\n\n\nSCIENCE LEADERSHIP ACADEMY MIDDLE SCHOOL\n2\n\n\nGIRLS, PHILA HIGH SCHOOL FOR\n2\n\n\nGIRARD, STEPHEN SCHOOL\n2\n\n\nHAMILTON, ANDREW SCHOOL\n2\n\n\nGLORIA CASAREZ ELEMENTARY SCHOOL\n2\n\n\nOLNEY CHRISTIAN SCHOOL\n2\n\n\nONE BRIGHT RAY-FAIRHILL CAMPUS\n2\n\n\nONE BRIGHT RAY-SIMPSON CAMPUS\n2\n\n\nK012 KIDS SCHOOL\n2\n\n\nDEBURGOS, J. ELEMENTARY\n2\n\n\nFELL, D. NEWLIN SCHOOL\n2\n\n\nFELTONVILLE INTERMEDIATE\n2\n\n\nEL CENTRO DE ESTUDIANTES\n2\n\n\nCENTRAL HIGH SCHOOL\n2\n\n\nCOMMUNITY ACADEMY OF PHILADELPHIA\n2\n\n\nFRANKLIN, BENJAMIN HIGH SCHOOL\n2\n\n\nFRANKLIN HIGH SCHOOL EOP\n2\n\n\nWIDENER MEMORIAL SCHOOL\n2\n\n\nPOWEL, SAMUEL SCHOOL\n2\n\n\nST MATTHEW SCHOOL\n2\n\n\nSPRING GARDEN SCHOOL\n2\n\n\nVISITATION SCHOOL\n2\n\n\nWEBSTER, JOHN H. SCHOOL\n2\n\n\nUNIVERSAL VARE CHARTER SCHOOL\n2\n\n\nPOTTER-THOMAS SCHOOL\n2\n\n\nST MONICA SCHOOL (JUNIOR SCHOOL)\n2\n\n\nHOWE, JULIA WARD SCHOOL\n2\n\n\nJOHN B STETSON MIDDLE SCHOOL\n2\n\n\nCITY SCHOOL AT FAIRMOUNT\n1\n\n\nDISCOVERY CHARTER SCHOOL\n1\n\n\nDISSTON, HAMILTON SCHOOL\n1\n\n\nDEEP ROOTS CHARTER SCHOOL\n1\n\n\n\n\n\n\n\n\nWithin a 1 mile radius to University City, two schools reported a total of 4 fatal accidents, which is less than the top 5 schools with fatal accidents with one school reporting 7, the other 6, 5, 4, and so on."
-  },
-  {
-    "objectID": "posts/000_test_post/index.html",
-    "href": "posts/000_test_post/index.html",
-    "title": "A test post",
-    "section": "",
-    "text": "import matplotlib.pyplot as plt"
-  },
-  {
-    "objectID": "posts/000_test_post/index.html#stories-from-data",
-    "href": "posts/000_test_post/index.html#stories-from-data",
-    "title": "A test post",
-    "section": "Stories from data",
-    "text": "Stories from data\n\nLet’s set up some data\n\n\nx = ['A', 'B', 'C']\ny = [1, 5, 3]\n\n\nNow let’s visualize it\n\nplt.bar(x, y)\nplt.show()"
   },
   {
     "objectID": "posts/006_DOW6/006_DOW6.html",
